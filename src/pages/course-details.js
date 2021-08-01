@@ -11,10 +11,10 @@ const Details = () => {
         <Layout>
             <Navbar />
             <PageBanner
-                pageTitle="Course Details" 
-                homePageText="Home" 
-                homePageUrl="/" 
-                activePageText="Course Details" 
+                pageTitle="Course Details"
+                homePageText="Home"
+                homePageUrl="/"
+                activePageText="Course Details"
             />
             <CourseDetailsContent />
             <RelatedCourses />

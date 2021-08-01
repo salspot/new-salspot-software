@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import ModalVideo from 'react-modal-video'
+// import ModalVideo from 'react-modal-video'
 import learning from '../../assets/images/explore-learning.jpg'
 
 const ExploreLearning = () => {
@@ -11,13 +11,13 @@ const ExploreLearning = () => {
     return (
         <React.Fragment>
             {/* If you want to change the video need to update videoID */}
-            <ModalVideo 
-                channel='youtube' 
-                isOpen={!isOpen} 
-                videoId='bk7McNUjWgw' 
-                onClose={() => setIsOpen(!isOpen)} 
-            />
-        
+            {/*<ModalVideo */}
+            {/*    channel='youtube' */}
+            {/*    isOpen={!isOpen} */}
+            {/*    videoId='bk7McNUjWgw' */}
+            {/*    onClose={() => setIsOpen(!isOpen)} */}
+            {/*/>*/}
+
             <div className="explore-learning-area ptb-100">
                 <div className="container">
                     <div className="row align-items-center">
@@ -34,8 +34,8 @@ const ExploreLearning = () => {
                         <div className="col-lg-6 col-md-12">
                             <div className="explore-learning-video">
                                 <img src={learning} alt="learning" />
- 
-                                <Link 
+
+                                <Link
                                     to="#"
                                     onClick={e => {e.preventDefault(); openModal()}}
                                     className="video-btn popup-youtube"

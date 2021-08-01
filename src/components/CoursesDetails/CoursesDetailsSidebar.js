@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import ModalVideo from 'react-modal-video'
+// import ModalVideo from 'react-modal-video'
 import course1 from '../../assets/images/courses/course1.jpg'
 // functional component
 const CoursesDetailsSidebar = () => {
@@ -12,20 +12,20 @@ const CoursesDetailsSidebar = () => {
     return (
         <React.Fragment>
             {/* If you want to change the video need to update videoID */}
-            <ModalVideo 
-                channel='youtube' 
-                isOpen={!isOpen} 
-                videoId='bk7McNUjWgw' 
-                onClose={() => setIsOpen(!isOpen)} 
-            /> 
+            {/*<ModalVideo */}
+            {/*    channel='youtube' */}
+            {/*    isOpen={!isOpen} */}
+            {/*    videoId='bk7McNUjWgw' */}
+            {/*    onClose={() => setIsOpen(!isOpen)} */}
+            {/*/> */}
 
             <div className="courses-details-info">
                 <div className="image">
                     <img src={course1} alt="course1" />
-                    
-                    <Link 
-                        to="#" 
-                        onClick={e => {e.preventDefault(); openModal()}} 
+
+                    <Link
+                        to="#"
+                        onClick={e => {e.preventDefault(); openModal()}}
                         className="link-btn popup-youtube"
                     >
                     </Link>
@@ -77,11 +77,11 @@ const CoursesDetailsSidebar = () => {
 
                 <div className="btn-box">
                     <Link to="#" className="default-btn">
-                        <i className="flaticon-shopping-basket"></i> 
+                        <i className="flaticon-shopping-basket"></i>
                         Add to Cart <span></span>
                     </Link>
                     <Link to="#" className="default-btn">
-                        <i className="flaticon-price-tag"></i> 
+                        <i className="flaticon-price-tag"></i>
                         Buy Now <span></span>
                     </Link>
                 </div>

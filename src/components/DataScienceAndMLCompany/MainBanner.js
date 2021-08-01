@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactWOW from 'react-wow'
-import ModalVideo from 'react-modal-video'
+// import ModalVideo from 'react-modal-video'
 import { Link } from 'gatsby'
 import img1 from '../../assets/images/main-banner/banner-one/banner-one-shape1.png'
 import img2 from '../../assets/images/main-banner/banner-one/banner-one-shape2.png'
@@ -24,12 +24,12 @@ const MainBanner = () => {
     return (
         <React.Fragment>
             {/* If you want to change the video need to update videoID */}
-            <ModalVideo 
-                channel='youtube' 
-                isOpen={!isOpen} 
-                videoId='bk7McNUjWgw' 
-                onClose={() => setIsOpen(!isOpen)} 
-            />
+            {/*<ModalVideo */}
+            {/*    channel='youtube' */}
+            {/*    isOpen={!isOpen} */}
+            {/*    videoId='bk7McNUjWgw' */}
+            {/*    onClose={() => setIsOpen(!isOpen)} */}
+            {/*/>*/}
 
             <div className="main-banner">
                 <div className="container-fluid">
@@ -39,22 +39,22 @@ const MainBanner = () => {
                                 <ReactWOW delay='.1s' animation='fadeInLeft'>
                                     <h1>Data Science Consulting Services</h1>
                                 </ReactWOW>
-                                
+
                                 <ReactWOW delay='.1s' animation='fadeInLeft'>
                                     <p>Get professional & reliable research oriented solutions for Data Science and Machine Learning business needs. Enjoy stress free decesion making!</p>
                                 </ReactWOW>
 
                                 <ReactWOW delay='.1s' animation='fadeInRight'>
                                     <div className="btn-box">
-                                        <Link 
+                                        <Link
                                             to="/about-us"
                                             className="default-btn"
                                         >
-                                            <i className="flaticon-structure"></i> 
+                                            <i className="flaticon-structure"></i>
                                             About Us <span></span>
                                         </Link>
 
-                                        <Link 
+                                        <Link
                                             to="#"
                                             onClick={e => {e.preventDefault(); openModal()}}
                                             className="video-btn popup-youtube"
