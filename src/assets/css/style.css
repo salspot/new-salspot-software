@@ -1103,7 +1103,10 @@ Navbar Area CSS
     margin-top: -60px;
   }
 }
-
+.textdecode {
+  font-size: 34px;
+  font-weight: 200;
+}
 
 
 .video-block-container h1 {
