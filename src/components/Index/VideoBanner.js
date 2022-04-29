@@ -9,7 +9,7 @@ const VideoBanner = () => {
         'fractional investing platforms.',
         'auction marketplaces & bidding platforms.',
         'healthcare & biotech.',
-        'online hypermarkets & online stores'.,
+        'online hypermarkets & online stores.',
         'smart devices & connected vehicles.',
         'think tanks, nonprofits, and NGOs.',
         'the media & entertainment industry.',
