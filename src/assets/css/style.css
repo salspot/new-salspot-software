@@ -987,6 +987,7 @@ Navbar Area CSS
   z-index: 999;
   /*padding-top: 10px;*/
   /*padding-bottom: 10px;*/
+  /*background-color: #000;*/
 
   font-size: 14px;
   font-weight: 600;
@@ -996,6 +997,140 @@ Navbar Area CSS
   padding-bottom: 40px;
   padding-left: 40px;
 }
+
+
+.video-wrapper {
+  background: #000;
+  z-index: 10;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  min-height: 560px;
+  position: relative;
+}
+
+.video-wrapper .container-fluid {
+  z-index: 10;
+  width: 100%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.video-block {
+  height: 100vh;
+}
+
+.video-block-container {
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-block-container video {
+  background-position: center center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.video-blurb .row {
+  color: #fff;
+  flex-direction:column;
+}
+
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  opacity: .52;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: linear-gradient(150deg,#000 28%,#181818 49%,#000 74%);
+}
+
+.video-blurb {
+  width: 100%;
+  padding: 0 12em 0 21rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.video-blurb h1 {
+  max-width: 700px;
+  text-shadow: 1px 1px 15px rgb(0 0 0);
+  font-size: 68px;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+@media (max-width: 1200px) {
+  .video-wrapper .video-blurb {
+    padding: 0 4em 0 9rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .video-wrapper .video-blurb h1 {
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 55px;
+    max-width: 500px;
+  }
+
+  .video-wrapper .video-blurb {
+    padding: 0 2rem 0 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-wrapper .video-blurb {
+    padding: 0 4rem 0 2rem;
+    margin-top: -60px;
+  }
+}
+
+
+
+.video-block-container h1 {
+  text-shadow: 1px 1px 15px rgba(0 0 0 60);
+  font-size: 68px;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.video-wrapper .video-blurb .tagline {
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+  text-align: left;
+  line-height: 1.7;
+  text-shadow: 1px 1px 15px rgb(0 0 0);
+}
+
+.video-wrapper .video-blurb .tagline .highlight {
+  white-space: nowrap;
+}
+
+.highlight {
+  color: #D5333E;
+  font-weight: 300;
+}
+
 
 .navbar-area.is-sticky {
   position: fixed;
@@ -7472,6 +7607,10 @@ Products Details Area CSS
 }
 .nav-link {
   color:#fff;
+}
+
+.logo {
+  width: 200px;
 }
 
 .products-details-tabs .nav .nav-item .nav-link {
