@@ -4475,7 +4475,8 @@
   }
   .tarn-nav .navbar .others-option .option-item .default-btn {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 700;
   }
   .tarn-nav .navbar .others-option .option-item .default-btn i {
     display: none;
