@@ -2,7 +2,8 @@ import React from "react";
 import { useRecoilState } from "recoil";
 import { collapsedState } from "../../utils/recoil-atoms";
 import { Link } from "gatsby";
-import logo from "../../assets/images/logo.svg";
+import logoWhite from "../../assets/images/logo-white.svg";
+import logoBlack from "../../assets/images/logo-black.svg";
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState);
@@ -41,7 +42,8 @@ const Navbar = () => {
                 onClick={() => setCollapsed(true)}
                 className="navbar-brand"
               >
-                <img src={logo} className="logo" alt="logo" />
+                <img src={logoWhite} className="logo logo-white" alt="logo" />
+                <img src={logoBlack} className="logo logo-black" alt="logo" />
               </Link>
 
               <button //mobile button

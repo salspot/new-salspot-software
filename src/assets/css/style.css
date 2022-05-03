@@ -979,23 +979,14 @@ Navbar Area CSS
 
 .navbar-area {
   position: absolute;
-  /*background-color: transparent;*/
   top: 0;
   left: 0;
   width: 100%;
-  /*height: auto;*/
   z-index: 999;
-  /*padding-top: 10px;*/
-  /*padding-bottom: 10px;*/
-  /*background-color: #000;*/
-
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
   font-size: 14px;
   font-weight: 600;
   padding: 40px;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
 }
 
 
@@ -1077,12 +1068,12 @@ Navbar Area CSS
   line-height: 1.1;
 }
 
+/*Responsiveness*/
 @media (max-width: 1200px) {
   .video-wrapper .video-blurb {
     padding: 0 4em 0 9rem;
   }
 }
-
 
 @media (max-width: 992px) {
   .video-wrapper .video-blurb h1 {
@@ -1103,6 +1094,9 @@ Navbar Area CSS
     margin-top: -60px;
   }
 }
+/*Responsiveness*/
+
+
 .textdecode {
   font-size: 34px;
   font-weight: 200;
@@ -1235,8 +1229,25 @@ hr, img {
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 20px 40px 20px;
+}
+
+.navbar-area.is-sticky .tarn-nav .navbar .navbar-nav .nav-item a,
+.navbar-area.is-sticky .default-btn{
+  color: black;
+}
+
+
+.navbar-area .logo-black {
+  display: none;
+}
+
+.navbar-area.is-sticky .logo-black {
+  display: block;
+}
+
+.navbar-area.is-sticky .logo-white {
+  display: none;
 }
 
 .navbar-area.navbar-style-two {
