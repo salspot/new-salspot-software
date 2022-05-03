@@ -1,5 +1,6 @@
 import React from 'react'
 import { TextScramble } from './TextScramble';
+import ClientLogos from './ClientLogos';
 
 const VideoBanner = () => {
     const phrasesToDecode = [
@@ -27,7 +28,7 @@ const VideoBanner = () => {
                         <div className="tagline show-on-desktop ng-isolate-scope">We're a digital product agency <span className="highlight">advancing technology</span> for
                             <br></br>
                             <span className="textdecode">
-                                <TextScramble phrasesToDecode={phrasesToDecode} />
+                                <TextScramble phrasesToDecode={phrasesToDecode}/>
                             </span>
                         </div>
                     </div>
@@ -42,6 +43,13 @@ const VideoBanner = () => {
                            type="video/mp4"
                            reveal="fadeIn"
                            data-sr-id="6"></video>
+                </div>
+            </div>
+
+
+            <div className="foot">
+                <div className="container-fluid">
+                    <ClientLogos />
                 </div>
             </div>
         </div>

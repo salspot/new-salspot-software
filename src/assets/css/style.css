@@ -1108,7 +1108,98 @@ Navbar Area CSS
   font-weight: 200;
 }
 
+/*video wrapper footer*/
+.video-wrapper .foot {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0 60px;
+}
 
+.video-wrapper .foot .message-row {
+  border-top: 1px solid #222;
+  color: #fff;
+  padding: 30px 5px;
+}
+
+.video-wrapper .block-left {
+  float: left;
+  margin-top: 8px;
+  font-size: 19px;
+  font-weight: 300;
+}
+.video-wrapper .block-right {
+  display: block;
+}
+
+.video-wrapper .onerow {
+  float: right;
+  max-width: 1100px;
+}
+
+.video-wrapper .tworow {
+  display: none;
+  margin: 10px auto 20px;
+}
+
+.video-wrapper .message-row {
+  display: block;
+}
+
+/*end video wrapper footer*/
+
+
+/*global */
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
+  display: table;
+  content: "";
+}
+
+.container, .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container, .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  max-width: 2000px;
+}
+
+.card, .clearfix:after, .container-fluid:after, .container:after, .dropdown-menu>li>a, .event-detail .desc, .event-detail .list, .events .desc, .events .list, .form-horizontal .form-group:after, .industry-detail.fintech .block-solutions, .jobs .values, .locations, .modal-footer:after, .modal-header:after, .nav:after, .navbar-header:after, .navbar:after, .panel-body:after, .row:after {
+  clear: both;
+}
+
+body {
+  font-size: 19px;
+  font-weight: 300;
+  color: #161616;
+  min-width: 320px;
+  text-align: left;
+  overscroll-behavior: none;
+  line-height: 1.5;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+hr, img {
+  border: 0;
+}
+
+
+/*end global*/
 .video-block-container h1 {
   text-shadow: 1px 1px 15px rgba(0 0 0 60);
   font-size: 68px;
