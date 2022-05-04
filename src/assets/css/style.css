@@ -102,11 +102,12 @@ img {
 }
 
 p {
-  color: #6b6b84;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #6d6d6d;
+  min-width: 320px;
+  text-align: left;
+  overscroll-behavior: none;
 }
 
 p:last-child {
@@ -1144,7 +1145,7 @@ Navbar Area CSS
 /*end video wrapper footer*/
 
 
-/*global */
+/*Global */
 .container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
   display: table;
   content: "";
@@ -1192,8 +1193,196 @@ hr, img {
   border: 0;
 }
 
+::selection {
+  background: #D5333E;
+  color: #fff;
+}
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+section::after, section::before {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
 
-/*end global*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+
+element.style {
+}
+.block-casestudies .title-block {
+  padding: 50px 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+body {
+  font-size: 19px;
+  font-weight: 300;
+  color: #161616;
+  min-width: 320px;
+  text-align: left;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  line-height: 1.5;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.categories-main ul li a, .header .title, h5, h6 {
+  text-transform: uppercase;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  color: #D5333E;
+  text-decoration: none;
+  transition: color .3s ease 0s,opacity .3s ease 0s;
+}
+
+/*End Global*/
+
+
+/*Case Studies */
+.block-casestudies {
+  margin-top: 50px;
+}
+
+.block-casestudies .title-block {
+  padding: 50px 0;
+}
+
+.block-casestudies .title-block h6 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+
+.block-casestudies .title-block h5 {
+  padding: 0 0 25px;
+  margin: 0;
+}
+
+.block-casestudies .discovery {
+  /*display: block;*/
+  margin-bottom: 50px;
+  text-align: left!important;
+}
+
+.block-casestudies .top {
+  z-index: 10;
+}
+
+.block-casestudies .block-text.left {
+  margin: 30px -400px 0 200px;
+  min-height: 675px;
+}
+
+/*noinspection ALL*/
+.block-casestudies .block-text {
+  background-color: #fff;
+  box-shadow: 0 10px 40px 0 rgb(133 157 183 / .12), 0 2px 9px 0 rgb(135 158 184 / .06);
+  padding: 60px 80px 80px;
+}
+
+.block-casestudies .block-text h3 {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 36px;
+  margin-top: 25px;
+}
+
+.block-casestudies .block-text .category-title {
+  font-size: 17px;
+  color: #777;
+}
+
+.block-casestudies .block-text p {
+  margin: 30px 0;
+}
+
+.block-casestudies .block-text .learnmore {
+  padding-top: 35px;
+}
+
+.block-casestudies .block-text .learnmore a.logolink {
+  margin-top: -50px;
+  display: block;
+  float: right;
+  opacity: .4;
+}
+
+.block-casestudies .block-text .learnmore a.morelink {
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.block-casestudies .block-image {
+  max-height: 750px;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.block-casestudies .block-image .bg-overlay {
+  right: inherit;
+  left: inherit;
+  top: inherit;
+  opacity: .1;
+  max-width: inherit;
+  height: auto;
+}
+
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  opacity: .52;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: linear-gradient(150deg,#000 28%,#181818 49%,#000 74%);
+}
+
+.industry-detail .block-casestudies .block-image .item {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 780px;
+}
+
+/*End Case Studies*/
+
 .video-block-container h1 {
   text-shadow: 1px 1px 15px rgba(0 0 0 60);
   font-size: 68px;

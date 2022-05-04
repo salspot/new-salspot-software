@@ -14,6 +14,7 @@ import ProjectStartArea from '../components/Index/ProjectStartArea'
 import OurBlog from '../components/Index/OurBlog'
 import VideoBanner from '../components/Index/VideoBanner';
 import HeroBanner from '../components/Index/HeroBanner';
+import CaseStudies from '../components/Index/CaseStudies';
 
 const Home = () => {
     return (
@@ -21,11 +22,9 @@ const Home = () => {
             <Navbar/>
             <VideoBanner/>
             <HeroBanner/>
+            <CaseStudies/>
 
 
-            <OurSolutions/>
-            <OurServices/>
-            <OurFeatures/>
             <TeamMember/>
             <RecentProjects/>
             <Pricing/>
