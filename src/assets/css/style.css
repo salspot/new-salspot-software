@@ -1146,6 +1146,10 @@ Navbar Area CSS
 
 
 /*Global */
+.modal.job-apply-form .modal-content, .modal.mobile-menu .modal-content, .modal.team-member .modal-content, .page-container, body {
+  overflow-x: hidden;
+}
+
 .container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
   display: table;
   content: "";
@@ -1382,6 +1386,90 @@ a {
 }
 
 /*End Case Studies*/
+
+
+/*HowCanWeHelpBanner*/
+.splashstrip {
+  padding: 70px 0;
+  position: relative;
+}
+
+.splashstrip .bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.splashstrip.color .bg-pattern {
+  background: #D5343F;
+  background: linear-gradient(to right,#D5343F,#97171F);
+}
+
+.splashstrip .container {
+  position: relative;
+  color: #fff;
+  text-align: left;
+}
+
+.splashstrip .container .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.splashstrip .message {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.splashstrip .button-group {
+  margin: 0;
+}
+
+.splashstrip .button-group .action-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.splashstrip.color .action-btn:hover {
+  background: #fff;
+  color: #D5333E;
+}
+
+.action-btn:active, .action-btn:focus, .action-btn:hover {
+  background-color: #161616;
+  color: #fff;
+  border: 2px solid #161616;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all .3s ease;
+}
+
+/*END HowCanWeHelpBanner*/
+
+.button-group {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.action-btn {
+  border-radius: 34px;
+  background-color: transparent;
+  color: #161616;
+  margin: 10px 5px;
+  outline: 0;
+  border: 2px solid #161616;
+  padding: 13px 25px;
+  min-width: 250px;
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: .3s;
+  transition-property: box-shadow,transform;
+}
 
 .video-block-container h1 {
   text-shadow: 1px 1px 15px rgba(0 0 0 60);

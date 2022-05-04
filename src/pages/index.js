@@ -15,6 +15,7 @@ import OurBlog from '../components/Index/OurBlog'
 import VideoBanner from '../components/Index/VideoBanner';
 import HeroBanner from '../components/Index/HeroBanner';
 import CaseStudies from '../components/Index/CaseStudies';
+import HowCanWeHelpBanner from '../components/Index/HowCanWeHelpBanner';
 
 const Home = () => {
     return (
@@ -26,13 +27,12 @@ const Home = () => {
 
 
             <TeamMember/>
-            <RecentProjects/>
-            <Pricing/>
             <Testimonials/>
             <Partner/>
             <OurBlog/>
             <ProjectStartArea/>
-            <Footer/>
+          <HowCanWeHelpBanner/>
+          <Footer/>
         </Layout>
     )
 }
