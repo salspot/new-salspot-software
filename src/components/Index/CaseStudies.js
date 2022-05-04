@@ -1,5 +1,6 @@
 import React from 'react';
 import CaseStudyDetails from './CaseStudyDetails';
+import CallToActionBanner from './CallToActionBanner';
 
 const CaseStudies = () => {
   return (
@@ -13,6 +14,7 @@ const CaseStudies = () => {
         <CaseStudyDetails/>
         <CaseStudyDetails/>
 
+        <CallToActionBanner/>
 
         <CaseStudyDetails/>
         <CaseStudyDetails/>
@@ -20,8 +22,11 @@ const CaseStudies = () => {
         <div className="block-cta-button">
           <a className="btn action-btn row seemore"
              href="https://scal.io/work/category/real-estate-construction">
-            See more of our work in Real Estate & Construction</a>
+            See more of our work</a>
         </div>
+
+
+
       </div>
     </section>
   )
