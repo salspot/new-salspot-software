@@ -1309,6 +1309,11 @@ a {
   min-height: 675px;
 }
 
+.block-casestudies .block-text.right, .landing-detail .block-casestudies .block-text.right, .services .approach .block-text.right {
+  margin: 30px 300px 0 -500px;
+  min-height: 675px
+}
+
 /*noinspection ALL*/
 .block-casestudies .block-text {
   background-color: #fff;
@@ -12748,3 +12753,639 @@ Go Top CSS
           transform: translateY(-5px);
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.block-testimonials .info-block, .img-circle, .industry-detail.fintech .block-casestudies .skayline, .landing-detail.fintech .block-casestudies .skayline, .spinner {
+  margin: auto
+}
+.industry-detail.fintech .block-casestudies h5, .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block .subtext, .landing-detail.fintech .block-casestudies h5, .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block .subtext, .work-detail .post-body .stats-block .stats-section i, h3 {
+  font-size: 30px
+}
+
+.cta-testimonials .info-block .carousel-control.left, .cta-testimonials .info-block .carousel-control.right, .block-casestudies .block-cta-button, .landing-detail .block-casestudies .block-cta-button, .services .approach .scalapse .panel.panel-open, .services .approach .scalapse .panel:hover, .services-detail .associations.top .card figure, .services-detail .card.circuit figure, .whatwedo .card.services figure {
+  background: 0 0
+}
+.block-casestudies .block-text h3 small, .landing-detail .block-casestudies .block-text h3 small, .modal.team-member .modal-content .title-block .person .text-block, .services .approach .block-text h2, .services .approach .block-text h2 small {
+  display: inline-block;
+  vertical-align: middle
+}
+.blog-detail .post-body .skayline, .block-casestudies .block-text p, .industry-detail .workwithus.head, .jobs .header .see-more-btn, .jobs .scalapse .role .panel-group, .landing-detail .block-casestudies .block-text p, .landing-detail .workwithus.head, .work .see-all-categories {
+  margin: 30px 0
+}
+
+.block-casestudies, .landing-detail .block-casestudies {
+  margin-top: 50px
+}
+
+.block-casestudies .top, .landing-detail .block-casestudies .top, .services .approach .top {
+  z-index: 10
+}
+
+.block-casestudies article, .landing-detail .block-casestudies article {
+  margin-bottom: 50px;
+  text-align: left !important
+}
+
+.block-casestudies .block-text, .landing-detail .block-casestudies .block-text {
+  background-color: #fff;
+  box-shadow: 0 10px 40px 0 rgba(133, 157, 183, .12), 0 2px 9px 0 rgba(135, 158, 184, .06);
+  padding: 60px 80px 80px;
+  border-radius: 10px
+}
+
+.block-casestudies .block-text .category-title, .landing-detail .block-casestudies .block-text .category-title {
+  font-size: 17px;
+  color: #777
+}
+
+.block-casestudies .block-text h3, .landing-detail .block-casestudies .block-text h3 {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 25px
+}
+
+.block-casestudies .block-text.left, .landing-detail .block-casestudies .block-text.left, .services .approach .block-text.left {
+  margin: 30px -400px 0 200px;
+  min-height: 675px
+}
+
+@media (max-width: 992px) {
+  .block-casestudies .block-text.left {
+    margin: 0;
+    padding: 50px;
+    min-height: auto
+  }
+
+  .block-casestudies .block-text .learnmore {
+    text-align: center;
+    width: 100%
+  }
+}
+
+.block-casestudies .block-text.right, .landing-detail .block-casestudies .block-text.right, .services .approach .block-text.right {
+  margin: 30px 300px 0 -500px;
+  min-height: 675px
+}
+
+.block-casestudies .block-text .learnmore, .landing-detail .block-casestudies .block-text .learnmore {
+  padding-top: 35px
+}
+
+.block-casestudies .block-text .learnmore a.logolink, .landing-detail .block-casestudies .block-text .learnmore a.logolink {
+  margin-top: -50px;
+  display: block;
+  float: right;
+  opacity: .4
+}
+
+.block-casestudies .block-text .learnmore a.morelink, .landing-detail .block-casestudies .block-text .learnmore a.morelink {
+  white-space: nowrap;
+  font-weight: 400
+}
+
+.block-casestudies .block-text .learnmore a.morelink:after, .landing-detail .block-casestudies .block-text .learnmore a.morelink:after {
+  content: '»';
+  margin-left: 10px;
+  transition: .3s;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 400;
+  color: #d5333e
+}
+
+.block-casestudies .block-image, .landing-detail .block-casestudies .block-image {
+  max-height: 750px;
+  max-width: 1200px;
+  overflow: hidden;
+  border-radius: 10px
+}
+
+.block-casestudies .block-image .item, .landing-detail .block-casestudies .block-image .item {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 780px
+}
+
+.block-casestudies .block-image .bg-overlay, .landing-detail .block-casestudies .block-image .bg-overlay {
+  right: inherit;
+  left: inherit;
+  top: inherit;
+  opacity: .1;
+  max-width: inherit;
+  border-radius: 10px
+}
+
+@media (max-width: 991px) {
+  .block-casestudies .block-text.right, .landing-detail .block-casestudies .block-text.right {
+    min-height: 0;
+    margin: 0;
+    padding: 20px 50px
+  }
+
+  .block-casestudies .block-image {
+    height: auto;
+    margin: 0 -15px
+  }
+
+  .block-casestudies .block-image img {
+    display: block;
+    max-width: 100%;
+    height: auto
+  }
+}
+
+@media (max-width: 1200px) {
+  .block-casestudies .block-text {
+    padding: 40px
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock {
+    padding: 0 20px
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp .impact li {
+    padding: 15px
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp .impact figure {
+    min-height: 100%
+  }
+
+  .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block {
+    padding: 50px 50px 20px
+  }
+
+  .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .desc {
+    padding: 0 50px 50px;
+    border: 0
+  }
+
+  .landing .card figure figcaption h3 {
+    font-size: 32px
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-detail .block-ourwork .boxy.left {
+    padding: 0 30px
+  }
+
+  .industry-detail .block-ourwork .boxy.left .boxy-inner {
+    padding: 100px 0
+  }
+
+  .industry-detail .block-ourwork .boxy.left .boxy-inner h2 {
+    font-size: 38px
+  }
+
+  .industry-detail .block-ourwork .boxy.right, .industry-detail.fintech .block-casestudies .three-panel .hero-container, .industry-detail.fintech .block-casestudies .three-panel .slideblock h3 .category-title {
+    display: none
+  }
+
+  .industry-detail .block-cta-button {
+    padding: 80px 50px
+  }
+
+  .block-casestudies .block-text.left {
+    padding: 20px 20px 50px
+  }
+
+  .block-casestudies .block-text.right, .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .desc {
+    padding: 20px
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel {
+    height: auto
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .col:after {
+    position: relative
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .col.col:hover > .slideblock, .industry-detail.fintech .block-casestudies .three-panel .slideblock {
+    position: relative;
+    top: 0
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .col {
+    border: 0;
+    height: auto;
+    margin: 80px 0
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock p {
+    visibility: visible
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock .learnmore {
+    visibility: visible;
+    padding: 5px 0 0
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp, .industry-detail.fintech.v2 .trustedexperience {
+    padding: 70px 0 40px
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp h2, .industry-detail.fintech.v2 .trustedexperience h2 {
+    font-size: 45px
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp .reflinks li a {
+    display: inline-block;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top
+  }
+
+  .industry-detail.fintech.v2 .module.fintechwork h2, .industry-detail.fintech.v2 .module.gradientblocks h2, .industry-detail.fintech.v2 .module.igniteflywheel h2, .industry-detail.fintech.v2 .module.provenexpertise h2 {
+    font-size: 40px;
+    margin: 20px 0 30px
+  }
+
+  .industry-detail.fintech.v2 .module.fintechwork, .industry-detail.fintech.v2 .module.provenexpertise {
+    padding: 70px 0 100px
+  }
+
+  .industry-detail.fintech.v2 .module.provenexpertise .card {
+    padding: 30px 0
+  }
+
+  .industry-detail.fintech.v2 .module.newmarketopp.ourservices figure figcaption .fig-block .heading, .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .heading {
+    font-size: 32px
+  }
+
+  .industry-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block {
+    padding: 20px 20px 0
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks {
+    padding: 70px 0
+  }
+
+  .industry-detail.fintech.v2 .module.conceptkickoff h2, .industry-detail.fintech.v2 .module.gradientblocks .message h3, .industry-detail.fintech.v2 .module.gradientblocks h3 {
+    font-size: 35px
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks .title .slug {
+    font-size: 14px
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks .message {
+    min-width: auto
+  }
+
+  .industry-detail.fintech.v2 .module.conceptkickoff .type {
+    margin: 15px 0 15px 50px
+  }
+}
+
+@media (max-width: 992px) {
+  .block-casestudies .block-text .learnmore a.logolink {
+    text-align: center;
+    width: 100%;
+    display: inline-block
+  }
+
+  .industry-detail.fintech .client-logo-strip .feature-riser, .industry-detail.fintech.v2 .trustedexperience .client-logo-strip .feature-riser {
+    padding: 60px 20px
+  }
+
+  .industry-detail.fintech .advancing-tech .block {
+    padding: 0 35px
+  }
+
+  .industry-detail.fintech .block-solutions .col2 .row .icon {
+    position: relative;
+    left: 0
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock {
+    padding: 0 10px
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock h3 {
+    font-size: 20px
+  }
+
+  .industry-detail.fintech .block-casestudies .three-panel .slideblock h3 .category-title, .industry-detail.fintech .block-casestudies .three-panel .slideblock p {
+    font-size: 16px
+  }
+
+  .industry-detail.fintech .module.stats .counter, .industry-detail.fintech.v2 .module.gradientblocks .row, .industry-detail.fintech.v2 .module.newmarketopp.ourservices figure {
+    display: block
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks .message {
+    min-width: auto
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks.one .image {
+    display: block;
+    margin: 0 -50px 50px
+  }
+
+  .industry-detail.fintech.v2 .module.gradientblocks.two .image {
+    display: block;
+    margin: 50px -50px 0
+  }
+
+  .landing .card figure figcaption h3 {
+    font-size: 28px
+  }
+
+  .landing-detail .scalapse h3 {
+    font-size: 24px;
+    margin: 0 40px;
+    text-align: left
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-detail .block-about {
+    padding: 50px 0 100px
+  }
+
+  .landing-detail .block-about .section-image .image-block {
+    text-align: center;
+    padding: 30px 60px
+  }
+
+  .landing-detail .block-ourwork .row {
+    display: block
+  }
+
+  .landing-detail .block-ourwork .boxy.left .boxy-inner h2 {
+    font-size: 52px
+  }
+
+  .landing-detail .block-casestudies .block-text.left {
+    margin: 0;
+    padding: 50px;
+    min-height: auto
+  }
+
+  .landing-detail .block-casestudies .block-text .learnmore {
+    text-align: center;
+    width: 100%
+  }
+}
+@media (max-width: 1200px) {
+  .landing-detail .block-casestudies .block-text {
+    padding: 40px
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock {
+    padding: 0 20px
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp .impact li {
+    padding: 15px
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp .impact figure {
+    min-height: 100%
+  }
+
+  .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block {
+    padding: 50px 50px 20px
+  }
+
+  .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .desc {
+    padding: 0 50px 50px;
+    border: 0
+  }
+
+  .jobs .scalapse h5.dept {
+    font-size: 18px
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-detail .block-ourwork .boxy.left .boxy-inner {
+    padding: 100px 0
+  }
+
+  .landing-detail .block-ourwork .boxy.left .boxy-inner h2 {
+    font-size: 38px
+  }
+
+  .landing-detail .block-ourwork .boxy.right, .landing-detail.fintech .block-casestudies .three-panel .hero-container, .landing-detail.fintech .block-casestudies .three-panel .slideblock h3 .category-title {
+    display: none
+  }
+
+  .landing-detail .block-cta-button {
+    padding: 80px 50px
+  }
+
+  .landing-detail .block-casestudies .block-text.left {
+    padding: 20px 20px 50px
+  }
+
+  .landing-detail .block-casestudies .block-text.right, .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .desc {
+    padding: 20px
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel {
+    height: auto
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .col:after {
+    position: relative
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .col.col:hover > .slideblock, .landing-detail.fintech .block-casestudies .three-panel .slideblock {
+    position: relative;
+    top: 0
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .col {
+    border: 0;
+    height: auto;
+    margin: 80px 0
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock p {
+    visibility: visible
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock .learnmore {
+    visibility: visible;
+    padding: 5px 0 0
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp, .landing-detail.fintech.v2 .trustedexperience {
+    padding: 70px 0 40px
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp h2, .landing-detail.fintech.v2 .trustedexperience h2 {
+    font-size: 45px
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp .reflinks li a {
+    display: inline-block;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top
+  }
+
+  .landing-detail.fintech.v2 .module.fintechwork h2, .landing-detail.fintech.v2 .module.gradientblocks h2, .landing-detail.fintech.v2 .module.igniteflywheel h2, .landing-detail.fintech.v2 .module.provenexpertise h2 {
+    font-size: 40px;
+    margin: 20px 0 30px
+  }
+
+  .landing-detail.fintech.v2 .module.fintechwork, .landing-detail.fintech.v2 .module.provenexpertise {
+    padding: 70px 0 100px
+  }
+
+  .landing-detail.fintech.v2 .module.provenexpertise .card {
+    padding: 30px 0
+  }
+
+  .landing-detail.fintech.v2 .module.newmarketopp.ourservices figure figcaption .fig-block .heading, .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .heading {
+    font-size: 32px
+  }
+
+  .landing-detail.fintech.v2 .module.provenexpertise .card li figure figcaption .fig-block {
+    padding: 20px 20px 0
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks {
+    padding: 70px 0
+  }
+
+  .landing-detail.fintech.v2 .module.conceptkickoff h2, .landing-detail.fintech.v2 .module.gradientblocks .message h3, .landing-detail.fintech.v2 .module.gradientblocks h3 {
+    font-size: 35px
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks .title .slug {
+    font-size: 14px
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks .message {
+    min-width: auto
+  }
+
+  .landing-detail.fintech.v2 .module.conceptkickoff .type {
+    margin: 15px 0 15px 50px
+  }
+
+  .landing-detail.fintech.v2 .module.conceptkickoff .progressbar li {
+    padding: 0 50px 50px 0
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-detail .block-casestudies .block-text .learnmore a.logolink {
+    text-align: center;
+    width: 100%;
+    display: inline-block
+  }
+
+  .landing-detail.fintech .client-logo-strip .feature-riser, .landing-detail.fintech.v2 .trustedexperience .client-logo-strip .feature-riser {
+    padding: 60px 20px
+  }
+
+  .landing-detail.fintech .advancing-tech .block {
+    padding: 0 35px
+  }
+
+  .landing-detail.fintech .block-solutions .col2 .row .icon {
+    position: relative;
+    left: 0
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock {
+    padding: 0 10px
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock h3 {
+    font-size: 20px
+  }
+
+  .landing-detail.fintech .block-casestudies .three-panel .slideblock h3 .category-title, .landing-detail.fintech .block-casestudies .three-panel .slideblock p {
+    font-size: 16px
+  }
+
+  .landing-detail.fintech .module.stats .counter, .landing-detail.fintech.v2 .module.gradientblocks .row, .landing-detail.fintech.v2 .module.newmarketopp.ourservices figure {
+    display: block
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks .message {
+    min-width: auto
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks.one .image {
+    display: block;
+    margin: 0 -50px 50px
+  }
+
+  .landing-detail.fintech.v2 .module.gradientblocks.two .image {
+    display: block;
+    margin: 50px -50px 0
+  }
+
+  .jobs .header .bg-overlay, .jobs .header .hero-image {
+    height: 750px
+  }
+
+  .jobs .scalapse h3 {
+    font-size: 24px;
+    margin: 0 40px;
+    text-align: left
+  }
+
+  .jobs .scalapse .panel:hover {
+    background: 0 0
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-detail .block-casestudies .block-image, .services .approach .block-image {
+    height: auto;
+    margin: 0 -15px
+  }
+
+  .landing-detail .block-casestudies .block-image img, .services .approach .block-image img {
+    display: block;
+    max-width: 100%;
+    height: auto
+  }
+
+  .services .expertise .type.design, .services .expertise .type.growth {
+    border-right: 0
+  }
+
+  .services .expertise .type.design, .services .expertise .type.strategy {
+    border-bottom: 5px solid #161616
+  }
+
+  .services .approach .block-text.left {
+    margin: 0;
+    padding: 50px;
+    min-height: auto
+  }
+
+  .services .approach .block-text.right {
+    min-height: 0;
+    margin: 0;
+    padding: 20px 50px
+  }
+}
+
+.block-casestudies .block-text.right, .landing-detail .block-casestudies .block-text.right, .services .approach .block-text.right {
+  margin: 30px 120px 0 -320px;
+  min-height: 675px
+}
+
+
+.block-casestudies .block-image.right {
+  overflow: visible;
+  margin-left: 200px;
+}

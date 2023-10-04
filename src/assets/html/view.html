@@ -1,0 +1,977 @@
+<header class="header" reveal="fadeInFast">
+    <div class="container">
+        <div class="headline" reveal="animate4">
+            <div class="col-md-8 col-md-offset-2"><h1 class="page-type" reveal="animate1">{{ vm.page.title }}</h1></div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+    <webp classes="hero-image" ng-if="vm.page.headerUrl" url="{{ vm.page.headerUrl }}" alt="Page Hero"></webp>
+</header>
+<section class="post-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-centered" reveal="animate7">
+                <article class="post" ng-bind-html="vm.page.body"></article>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="assoc" ui-view="associations@page"></div>'), e.put('zxl', '
+<header class="header">
+    <div class="container-fluid">
+        <div class="row headline">
+            <div class="col-lg-8 col-md-11 col-sm-8 col-xs-12 row">
+                <div class="title" reveal="animate2">What We Do</div>
+                <h1 class="page-type" reveal="animate4" style="max-width: 800px;">The best technology is functional and personal</h1>
+                <div class="skayline" reveal="animate6"></div>
+                <div class="page-blurb col-lg-9" reveal="animate8">We turn ones and zeros into memorable digital products that empower users and deliver results for the world\'s leading companies.
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="expertise"><h5 reveal="animate3">Our Expertise</h5>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="type {{categoriesName | lowercase}} col-xs-12 col-sm-6 col-md-3"
+                 ng-repeat="(categoriesName, categoriesArray) in vm.services | orderBy: \'categories.weight\' | groupBy: \'categories.name\'" reveal="animate4">
+                <div class="block">
+                    <ul>
+                        <li><h5 class="title" ng-bind-html="categoriesName"></h5>
+                            <div class="skayline"></div>
+                        </li>
+                        <li ng-repeat="service in categoriesArray | orderBy: \'position\'">{{ service.title }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="approach" class="approach"><h5 reveal="animate5">Our Approach</h5>
+    <div class="container-fluid">
+        <article class="row discovery">
+            <div class="col-md-4 top" reveal="rightToLeft1">
+                <div class="block-text left"><h2><small>01</small> Discover</h2>
+                    <p>We find what works for your business through research, analysis, and prototyping. We\'ll immerse ourselves in your brand and present relevant research before we identify the
+                        most suitable solutions for your model. To mitigate risk, the discovery phase is crucial to lay the groundwork for the design and development phases.</p>
+                    <uib-accordion close-others="true" class="scalapse">
+                        <ul reveal="rightToLeft2">
+                            <li uib-accordion-group="" class="panel-default" is-open="status1.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status1.open, \'closed\': !status1.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Product Strategy Workshop</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>Our team studies your product positioning, target market, user base. We analyze the competitive landscape, existing analytics, and product state.</li>
+                                    <li>Evaluate current product state and the path to future product state</li>
+                                    <li>Analytics evaluation of current products</li>
+                                    <li>Identifying target market and user base</li>
+                                </ol>
+                            </li>
+                            <li uib-accordion-group="" class="panel-default" is-open="status3.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status3.open, \'closed\': !status3.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Prototyping</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>Two week interactive prototyping phase</li>
+                                    <li>User Testing & Focus Groups</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </uib-accordion>
+                </div>
+            </div>
+            <div class="col-md-8" reveal="leftToRight1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp url="/assets/images/services/discover-8e11dfe8e7.jpg" alt="Our Approach - Step 1: Discovery"></webp>
+                </div>
+            </div>
+        </article>
+        <article class="row design">
+            <div class="col-md-4 col-md-push-8 top" reveal="leftToRight1">
+                <div class="block-text right"><h2><small>02</small> Design</h2>
+                    <p>We work closely with your team to ensure the best visual and functional experience. We map out user flows and define user personas to guide the user journey. The goal for this
+                        phase is to think through the product and make decisions based on the most effective paths for user engagement.</p>
+                    <uib-accordion close-others="true" class="scalapse">
+                        <ul reveal="rightToLeft2">
+                            <li uib-accordion-group="" class="panel-default" is-open="status5.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status5.open, \'closed\': !status5.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">UX Design (User Experience)</h4></div>
+                                </uib-accordion-heading>
+                                <p>Defining the product, functionalities & all layouts. This includes the creation of the following:</p>
+                                <ol>
+                                    <li>User Personas</li>
+                                    <li>User Story Backlogging</li>
+                                    <li>Information Architecture</li>
+                                    <li>User Flows</li>
+                                    <li>Wireframing</li>
+                                    <li>Usability Testing</li>
+                                </ol>
+                            </li>
+                            <li uib-accordion-group="" class="panel-default" is-open="status7.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status7.open, \'closed\': !status7.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">UI Design (Visual)</h4></div>
+                                </uib-accordion-heading>
+                                <p>Defining the look and feel. Visual layout design, creating animations & designing icon and image sets in accordance with brand and style guidelines.</p>
+                                <ol>
+                                    <li>Interface design for all screen states</li>
+                                    <li>Animations and Transitions</li>
+                                    <li>Usability Testing</li>
+                                    <li>Preparation and handoff of assets to engineering team</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </uib-accordion>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4" reveal="rightToLeft1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp url="/assets/images/services/design-2bca9d84e9.jpg" alt="Our Approach - Step 2: Design"></webp>
+                </div>
+            </div>
+        </article>
+        <article class="row develop">
+            <div class="col-md-4 top" reveal="rightToLeft1">
+                <div class="block-text left"><h2><small>03</small> Build</h2>
+                    <p>Our focus is to deliver the highest quality code, with the lowest technical debt, so your product is ready for launch and built to scale for future versions. That requires us to
+                        understand your current goals as well as your long-term vision. We meet our high standards by having a combination of automated tests, code quality checks, visual regression
+                        tests and team peer reviews.</p>
+                    <uib-accordion close-others="true" class="scalapse">
+                        <ul reveal="rightToLeft2">
+                            <li uib-accordion-group="" class="panel-default" is-open="status9.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status9.open, \'closed\': !status9.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Full product development cycle</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>One to two week sprint cycles (depending upon project)</li>
+                                    <li>We integrate our product team into your organization</li>
+                                </ol>
+                            </li>
+                            <li uib-accordion-group="" class="panel-default" is-open="status13.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status13.open, \'closed\': !status13.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Testing &amp; Review</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>Unit, Regression & System Testing</li>
+                                    <li>Extensive Code Reviews</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </uib-accordion>
+                </div>
+            </div>
+            <div class="col-md-8" reveal="leftToRight1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp url="/assets/images/services/develop-e0691a068b.jpg" alt="Our Approach - Step 3: Development"></webp>
+                </div>
+            </div>
+        </article>
+        <article class="row scale">
+            <div class="col-md-4 col-md-push-8 top" reveal="leftToRight1">
+                <div class="block-text right"><h2><small>04</small> Scale</h2>
+                    <p>After launch, we\'ll identify and recommend a plan for maintenance and hosting based on your specific platform. Systems need to be updated and platforms grow, our support and
+                        hosting offerings allow us to monitor your system and respond to issues in real time as they arise. We also offer knowledge transfer training for clients who decide it\'s best
+                        for them to handle future modifications and maintenance in-house.</p>
+                    <uib-accordion close-others="true" class="scalapse">
+                        <ul reveal="rightToLeft2">
+                            <li uib-accordion-group="" class="panel-default" is-open="status15.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status15.open, \'closed\': !status15.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Support and Maintenance</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>Service Level Agreements (SLA) and network uptime guarantees</li>
+                                </ol>
+                            </li>
+                            <li uib-accordion-group="" class="panel-default" is-open="status17.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status17.open, \'closed\': !status17.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">DevOps, Infrastructure, Hosting</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>Continuous Integration</li>
+                                    <li>Kubernetes</li>
+                                </ol>
+                            </li>
+                            <li uib-accordion-group="" class="panel-default" is-open="status19.open">
+                                <uib-accordion-heading>
+                                    <div class="heading">
+                                        <div class="circle-plus" ng-class="{\'opened\': status19.open, \'closed\': !status19.open}">
+                                            <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            </div>
+                                        </div>
+                                        <h4 class="title">Growth</h4></div>
+                                </uib-accordion-heading>
+                                <ol>
+                                    <li>We work with you over the long-term to help scale and develop your product, as well as identify how tech can solve other problems you may encounter</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </uib-accordion>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4" reveal="rightToLeft1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp url="/assets/images/services/scale-106cbfca85.jpg" alt="Our Approach - Step 4: Scale"></webp>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>'), e.put('app/team/team-member-modal.view.html', '
+<div class="modal team-member" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="close" ng-click="$hide()" type="button"><i class="icon-times-circle"></i></button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="member-block col-centered">
+                        <div class="title-block">
+                            <div class="person">
+                                <webp url="{{vm.person.imageUrl}}"></webp>
+                                <div class="text-block"><h1 ng-bind="vm.person.name"></h1>
+                                    <div class="title" ng-if="vm.person.type===\'advisor\'">Advisory Board</div>
+                                    <div class="title" ng-bind="vm.person.title" ng-if="vm.person.type!==\'advisor\'"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bio" ng-bind-html="vm.person.bio"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>'), e.put('app/team/team.view.html', '
+<header class="header">
+    <div class="container-fluid">
+        <div class="row headline">
+            <div class="col-lg-8 col-md-11 col-sm-8 col-xs-12 row">
+                <div class="title" reveal="animate2">Meet Our Team</div>
+                <h1 class="page-type" reveal="animate4" style="max-width: 800px;">A passionate team of creatives, engineers, and product strategists</h1>
+                <div class="skayline" reveal="animate6"></div>
+                <div class="page-blurb col-lg-9" reveal="animate8">Our experience, interdisciplinary skill sets, and domain expertise across two dozen industries have enabled us to tackle projects of
+                    any scale and complexity. When working with us, you don\'t get one person, you get the entire team.
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="team-members">
+    <section class="container">
+        <div class="row"><h5 reveal="animate2">partners</h5>
+            <div class="member partner col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="member in vm.team" ng-if="member.type===\'partner\'">
+                <div class="block" reveal="animate3"><a class="person-list__item" role="button" ui-sref="person({personSlug: member.meta.slug})">
+                    <webp classes="img-circle img-responsive" url="{{member.imageUrl}}" alt="{{ member.meta.slug | capitalize }} Partner"></webp>
+                </a> <i class="icon-logo-white-mark"><span class="path1"><span class="path2"></span></span></i><h4>{{ member.name }}</h4><small>{{ member.title }}</small>
+                    <div class="networks" ng-repeat="network in member.networks"><a class="btn" ng-if="network.name===\'linkedin\'" href="//www.linkedin.com/in/{{network.url}}" target="_blank"
+                                                                                    rel="noopener"><i class="icon-linkedin"></i></a> <a class="btn" ng-if="network.name===\'twitter\'"
+                                                                                                                                        href="//twitter.com/{{network.url}}" target="_blank"
+                                                                                                                                        rel="noopener"><i class="icon-twitter"></i></a> <a class="btn"
+                                                                                                                                                                                           ng-if="network.name===\'github\'"
+                                                                                                                                                                                           href="//github.com/{{network.url}}"
+                                                                                                                                                                                           target="_blank"
+                                                                                                                                                                                           rel="noopener"><i
+                            class="icon-github"></i></a> <a class="btn" ng-if="network.name===\'other\'" href="//{{network.url}}" target="_blank" rel="noopener"><i class="icon-fire"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row"><h5 reveal="animate2">advisory board</h5>
+            <div ng-class="{\'member advisor col-sm-6 col-centered\': vm.team.length === 1, \'member advisor col-sm-6\': vm.team.length === 2, \'member advisor col-lg-4 col-md-4 col-sm-6 col-xs-12\': vm.team.length >= 3}"
+                 ng-repeat="member in vm.team" ng-if="member.type===\'advisor\'">
+                <div class="block" reveal="animate3"><a class="person-list__item" role="button" ui-sref="person({personSlug: member.meta.slug})">
+                    <webp classes="img-circle img-responsive" url="{{ member.imageUrl}}" alt="{{ member.meta.slug | capitalize }} Scalio Advisor"></webp>
+                </a> <i class="icon-logo-white-mark"><span class="path1"><span class="path2"></span></span></i><h4>{{ member.name }}</h4><small>{{ member.title }}</small>
+                    <div class="networks" ng-repeat="network in member.networks"><a class="btn" ng-if="network.name===\'linkedin\'" href="//www.linkedin.com/in/{{network.url}}" target="_blank"
+                                                                                    rel="noopener"><i class="icon-linkedin"></i></a> <a class="btn" ng-if="network.name===\'twitter\'"
+                                                                                                                                        href="//twitter.com/{{network.url}}" target="_blank"
+                                                                                                                                        rel="noopener"><i class="icon-twitter"></i></a> <a class="btn"
+                                                                                                                                                                                           ng-if="network.name===\'github\'"
+                                                                                                                                                                                           href="//github.com/{{network.url}}"
+                                                                                                                                                                                           target="_blank"
+                                                                                                                                                                                           rel="noopener"><i
+                            class="icon-github"></i></a> <a class="btn" ng-if="network.name===\'other\'" href="//{{network.url}}" target="_blank" rel="noopener"><i class="icon-fire"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row"><h5 reveal="animate2">team</h5>
+            <div class="member col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="member in vm.team" ng-if="member.type===\'team\'">
+                <div class="block" reveal="animate3"><a class="person-list__item" role="button" ui-sref="person({personSlug: member.meta.slug})">
+                    <webp classes="img-circle img-responsive" url="{{member.imageUrl}}" alt="{{ member.meta.slug | capitalize }} Team Member"></webp>
+                </a> <i class="icon-logo-white-mark"><span class="path1"><span class="path2"></span></span></i><h4>{{ member.name }}</h4><small>{{ member.title }}</small>
+                    <div class="networks" ng-repeat="network in member.networks"><a class="btn" ng-if="network.name===\'linkedin\'" href="//www.linkedin.com/in/{{network.url}}" target="_blank"
+                                                                                    rel="noopener"><i class="icon-linkedin"></i></a> <a class="btn" ng-if="network.name===\'twitter\'"
+                                                                                                                                        href="//twitter.com/{{network.url}}" target="_blank"
+                                                                                                                                        rel="noopener"><i class="icon-twitter"></i></a> <a class="btn"
+                                                                                                                                                                                           ng-if="network.name===\'github\'"
+                                                                                                                                                                                           href="//github.com/{{network.url}}"
+                                                                                                                                                                                           target="_blank"
+                                                                                                                                                                                           rel="noopener"><i
+                            class="icon-github"></i></a> <a class="btn" ng-if="network.name===\'other\'" href="//{{network.url}}" target="_blank" rel="noopener"><i class="icon-fire"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row"><h5 reveal="animate2">domain specialists</h5>
+            <div ng-class="{\'member specialist col-sm-6 col-centered\': vm.team.length === 1, \'member specialist col-sm-6\': vm.team.length === 2, \'member specialist col-lg-4 col-md-4 col-sm-6 col-xs-12\': vm.team.length >= 3}"
+                 ng-repeat="member in vm.team" ng-if="member.type===\'specialist\'">
+                <div class="block" reveal="animate3"><a class="person-list__item" role="button" ui-sref="person({personSlug: member.meta.slug})">
+                    <webp classes="img-circle img-responsive" url="{{ member.imageUrl}}" alt="{{ member.meta.slug | capitalize }} Scalio Domain Specialist"></webp>
+                </a> <i class="icon-logo-white-mark"><span class="path1"><span class="path2"></span></span></i><h4>{{ member.name }}</h4><small>{{ member.title }}</small>
+                    <div class="networks" ng-repeat="network in member.networks"><a class="btn" ng-if="network.name===\'linkedin\'" href="//www.linkedin.com/in/{{network.url}}" target="_blank"
+                                                                                    rel="noopener"><i class="icon-linkedin"></i></a> <a class="btn" ng-if="network.name===\'twitter\'"
+                                                                                                                                        href="//twitter.com/{{network.url}}" target="_blank"
+                                                                                                                                        rel="noopener"><i class="icon-twitter"></i></a> <a class="btn"
+                                                                                                                                                                                           ng-if="network.name===\'github\'"
+                                                                                                                                                                                           href="//github.com/{{network.url}}"
+                                                                                                                                                                                           target="_blank"
+                                                                                                                                                                                           rel="noopener"><i
+                            class="icon-github"></i></a> <a class="btn" ng-if="network.name===\'other\'" href="//{{network.url}}" target="_blank" rel="noopener"><i class="icon-fire"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>'), e.put('app/testimonials/testimonials.view.html', '
+<header class="header">
+    <div class="container-fluid">
+        <div class="row headline">
+            <div class="col-lg-9 row">
+                <div class="title" reveal="animate2">What Our Clients Say</div>
+                <h1 class="page-type" reveal="animate4" style="max-width: 850px;">Behind every great product, is an even greater client</h1>
+                <div class="skayline" reveal="animate6"></div>
+                <div class="page-blurb col-lg-7 col-md-10" reveal="animate8">Our relationships with clients take our work from good to great. See what our clients turned fans have to say about our
+                    team.
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="quotes-block">
+    <div class="container">
+        <div class="row"><h5 reveal="animate3">What They Say</h5>
+            <div class="quote col-lg-12 col-md-12 col-xs-12" ng-class="{\'flash-bg\': vm.slug===testimonial.meta.slug}" ng-repeat="testimonial in vm.testimonials" ng-if="testimonial.type===\'client\'"
+                 reveal="animate4">
+                <figure>
+                    <div class="col-md-2" id="{{testimonial.meta.slug}}">
+                        <webp classes="img-circle" ng-if="testimonial.imageUrl" url="{{testimonial.imageUrl}}" alt="{{ testimonial.name }} Profile Image"></webp>
+                        <i class="icon-person-placeholder img-circle placeholder" ng-if="!testimonial.imageUrl"></i> <a ui-sref="testimonials-detail({slug: testimonial.meta.slug})" class="permalink"
+                                                                                                                        title="Open a permalink to this Testimonial"><i class="icon-link"></i></a></div>
+                    <div class="col-md-7">
+                        <blockquote><p class="blurb text">{{testimonial.quote}}</p><small class="person text"><a href="{{testimonial.linkedin}}" target="_blank" rel="noopener">{{testimonial.name}},
+                            <span class="company">{{testimonial.company}}</span></a></small></blockquote>
+                    </div>
+                    <div class="col-md-3" ng-if="testimonial.workItem"><a ui-sref="work-detail({slug: testimonial.workItem.meta.slug})">
+                        <div class="img-box">
+                            <webp classes="img-responsive" url="{{testimonial.workItem.thumbnailUrl}}" alt="{{ testimonial.workItem.meta.slug | capitalize }} Portfolio Image"></webp>
+                        </div>
+                    </a></div>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>'), e.put('app/work/work-heading-category.partial.html', '
+<header class="header">
+    <div class="container-fluid">
+        <div class="row headline">
+            <div class="col-lg-8 col-md-11 col-sm-8 col-xs-12 row">
+                <div class="title crumb" reveal="animate2"><a ui-sref="work">Our Work</a> <span class="slug">/ {{ pageType.name }}</span></div>
+                <h1 class="page-type" reveal="animate4" style="max-width: 900px;">Our work in <span class="topic">{{ pageType.name }}</span></h1>
+                <div class="skayline" reveal="animate6"></div>
+                <div class="page-blurb col-md-9" reveal="animate8">We\'ve completed over 850 projects across 30 industries in client work, open source initiatives, and our own products. Below are {{
+                    projectCategoryCount }} of our initiatives in <span class="projectname">{{ pageType.name }}</span>.
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="see-all-categories" reveal="animate9"><a href="#" class="btn action-btn row" ui-sref="work-categories-modal" ui-sref-active="active">See All Categories</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="categories-main" reveal="animate11">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="category-groups">
+                <li><a href="#" class="filter-all" ui-sref="work" ui-sref-active="active">All</a></li>
+                <li ng-repeat="group in categoryGroups"><a href="#" class="filter" ui-sref="work-category-group({groupSlug: group.meta.slug})" ui-sref-active="active">{{group.name}}</a></li>
+            </ul>
+        </div>
+    </div>
+</section>'), e.put('app/work/work-heading.partial.html', '
+<header class="header">
+    <div class="container-fluid">
+        <div class="row headline">
+            <div class="col-lg-8 col-md-11 col-sm-8 col-xs-12 row">
+                <div class="title" reveal="animate2">Our Work</div>
+                <h1 class="page-type" reveal="animate4" style="max-width: 800px;">Our portfolio of digital products and services</h1>
+                <div class="skayline" reveal="animate6"></div>
+                <div class="page-blurb col-lg-8 col-md-9" reveal="animate8">We\'ve completed over 850 projects across 30 industries in client work, open source initiatives, and our own products. Below
+                    are some of the projects we\'re able to share with you.
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="see-all-categories" reveal="animate9"><a href="#" class="btn action-btn row" ui-sref="work-categories-modal" ui-sref-active="active">See All Categories</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="categories-main" reveal="animate11">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="category-groups">
+                <li><a href="#" class="filter-all" ui-sref="work" ui-sref-active="active">All</a></li>
+                <li ng-repeat="group in categoryGroups"><a href="#" class="filter" ui-sref="work-category-group({groupSlug: group.meta.slug})" ui-sref-active="active">{{group.name}}</a></li>
+            </ul>
+        </div>
+    </div>
+</section>'), e.put('app/work/work-main.view.html', '
+<div ui-view="header@work"></div>
+<div ui-view="content@work"></div>'), e.put('app/work/work.view.html', '
+<section class="listing card-wrapper">
+    <div class="container-fluid" ng-if="vm.work.portfolio.length">
+        <div class="row">
+            <ul class="card big">
+                <li ng-class="{\'col-sm-6 col-centered\': vm.work.portfolio.length === 1, \'col-sm-6\': vm.work.portfolio.length === 2, \'col-lg-4 col-md-4 col-sm-6 col-xs-12\': vm.work.portfolio.length >= 3}"
+                    ng-repeat="work in vm.work.portfolio" ng-if="work.state!=\'publishedHidden\'" reveal="animate7"><a ui-sref="work-detail({slug: work.meta.slug})" ng-if="work.state!=\'soon\'">
+                    <figure>
+                        <figcaption>
+                            <div class="fig-left"><h4 class="post-title">{{ work.title }}</h4>
+                                <div class="category-title"><span ng-bind-html="work.categories.workName" ng-if="(work.categories.workName && !work.categories.name)"></span> <span
+                                        ng-bind-html="work.categories.name" ng-if="(!work.categories.workName && work.categories.name)"></span> <span ng-bind-html="work.categories.workName"
+                                                                                                                                                      ng-if="(work.categories.workName && work.categories.name)"></span>
+                                </div>
+                            </div>
+                        </figcaption>
+                        <div class="img-box">
+                            <div class="img-overlay"></div>
+                            <webp classes="img-responsive" url="{{work.thumbnailUrl}}" alt="{{work.title}} Thumbnail"></webp>
+                        </div>
+                    </figure>
+                </a>
+                    <figure class="soon" ng-if="work.state===\'soon\'">
+                        <figcaption>
+                            <div class="fig-left"><h4 class="post-title">{{ work.title }}</h4>
+                                <div class="category-title">{{ work.categories.name }}</div>
+                            </div>
+                        </figcaption>
+                        <div class="img-box">
+                            <div class="img-overlay soon"></div>
+                            <webp classes="img-responsive" url="{{work.thumbnailUrl}}" alt="{{work.title}} Thumbnail"></webp>
+                        </div>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container nocontent" ng-if="!vm.work.portfolio.length && !vm.work.oss.length" reveal="animate15">Hang tight, we\'ll add some content for this group soon.</div>
+</section>
+<section class="listing card-wrapper oss" ng-if="vm.work.oss.length">
+    <div class="container-fluid">
+        <ul class="card big"><h5 reveal="animate5">Open Source</h5>
+            <li ng-class="{\'col-sm-6 col-centered\': vm.work.oss.length === 1, \'col-sm-6\': vm.work.oss.length === 2, \'col-lg-4 col-md-4 col-sm-6 col-xs-12\': vm.work.oss.length >= 3}"
+                ng-repeat="oss in vm.work.oss" reveal="animate7"><a ui-sref="work-detail({slug: oss.meta.slug})" ng-if="oss.state!=\'soon\'">
+                <figure>
+                    <figcaption>
+                        <div class="fig-left"><h4 class="post-title">{{ oss.title }}</h4>
+                            <div class="category-title" ng-bind-html="oss.categories.workName"></div>
+                        </div>
+                    </figcaption>
+                    <div class="img-box">
+                        <div class="img-overlay"></div>
+                        <webp classes="img-responsive" url="{{oss.thumbnailUrl}}" alt="{{oss.title}} Thumbnail"></webp>
+                    </div>
+                </figure>
+            </a>
+                <figure class="soon" ng-if="oss.state===\'soon\'">
+                    <figcaption>
+                        <div class="fig-left"><h4 class="post-title">{{ oss.title }}</h4>
+                            <div class="category-title" ng-bind-html="oss.categories.workName"></div>
+                        </div>
+                    </figcaption>
+                    <div class="img-box">
+                        <div class="img-overlay soon"></div>
+                        <webp classes="img-responsive" url="{{oss.thumbnailUrl}}" alt="{{oss.title}} Thumbnail"></webp>
+                    </div>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="logo-grid" ng-if="vm.logos">
+    <div class="container-fluid">
+        <div class="row"><h5>trusted by</h5>
+            <ul>
+                <li ng-class="{\'col-sm-6 col-centered\': vm.logos.length === 1, \'col-sm-6\': vm.logos.length === 2, \'col-lg-4 col-md-4 col-sm-6 col-xs-12\': vm.logos.length >= 3}"
+                    ng-repeat="logo in vm.logos track by $index" reveal="animate7">
+                    <webp classes="img-responsive" url="{{logo}}" alt="Work Item Logo"></webp>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>'), e.put('app/blog/blog-detail/blog-detail.view.html', '
+<header class="header" reveal="fadeInFast">
+    <div class="bg-overlay"></div>
+    <webp classes="hero-image" url="{{ vm.blogPost.headerUrl }}" alt="Blog Detail Page Hero"></webp>
+</header>
+<section class="post-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 col-centered">
+                <div class="categoryName" reveal="animate2">{{ vm.blogPost.categories.name }}</div>
+                <h1 class="page-type" reveal="animate4">{{ vm.blogPost.title }}</h1>
+                <div class="author" reveal="animate6">
+                    <div class="block left">
+                        <webp classes="author-circle" url="{{ vm.blogPost.author.imageUrl }}" alt="{{ vm.blogPost.author.name }} Blog Author"></webp>
+                    </div>
+                    <div class="block right"><h4>{{ vm.blogPost.author.name }}</h4><small>{{ vm.blogPost.author.title }}</small></div>
+                </div>
+                <div class="skayline" reveal="animate8"></div>
+                <article class="post" ng-bind-html="vm.blogPost.body" reveal="animate10"></article>
+                <div class="socialshare" reveal="animate11"><strong>Share</strong>
+                    <ul class="">
+                        <li><a href="#" class="icon-facebook" socialshare="" socialshare-provider="facebook" socialshare-text="{{vm.blogPost.title}}"
+                               socialshare-hashtags="{{vm.blogPost.categories.name.split(\' \').join(\'\')}}" socialshare-quote="{{vm.blogPost.title}}" socialshare-url="{{vm.absUrl}}"></a></li>
+                        <li><a href="#" class="icon-twitter" socialshare="" socialshare-provider="twitter" socialshare-text="{{vm.blogPost.title}}"
+                               socialshare-hashtags="{{vm.blogPost.categories.name.split(\' \').join(\'\')}}" socialshare-url="{{vm.absUrl}}"></a></li>
+                        <li><a href="#" class="icon-linkedin" socialshare="" socialshare-provider="linkedin" socialshare-text="{{vm.blogPost.title}}"
+                               socialshare-hashtags="{{vm.blogPost.categories.name.split(\' \').join(\'\')}}" socialshare-url="{{vm.absUrl}}"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="assoc" ui-view="associations@blogDetail"></div>
+<section class="back-block">
+    <div class="container-fluid"><a class="seeall" ui-sref="blog"><i class="icon-long-arrow-left"></i> <span class="action-text">Back to blog</span></a></div>
+</section>'), e.put('app/events/event-detail/event-detail.view.html', '
+<header class="header">
+    <div class="container">
+        <div class="headline">
+            <div class="col-md-8 col-md-offset-2"><h1 class="page-type" reveal="animate5">{{ vm.event.title }}</h1></div>
+        </div>
+    </div>
+    <div reveal="fadeInFast">
+        <div class="bg-overlay"></div>
+        <webp classes="hero-image" url="{{ vm.event.headerUrl }}" alt="Event Detail Page Hero"></webp>
+    </div>
+</header>
+<section class="detail">
+    <article class="container">
+        <div class="desc row" reveal="animate3">
+            <div class="col-md-1 conf-shortdate">
+                <div class="month">{{ vm.event.startDate | formatTime:false:\'month\'}}</div>
+                <div class="day">{{ vm.event.startDate | formatTime:false:\'day\'}}</div>
+            </div>
+            <div class="col-md-6 conf-img">
+                <webp classes="img-responsive" url="{{vm.event.thumbnailUrl}}" alt="Event Detail Thumbnail"></webp>
+            </div>
+            <div class="col-md-4 conf-info">
+                <div class="conf-title">{{vm.event.title}}</div>
+                <div class="conf-date" ng-bind="vm.event.startDate | date:\'EEE, MMM d, y @ h:mma\'"></div>
+                <div class="conf-address">{{vm.event.location}}</div>
+                <div class="conf-preview" ng-bind-html="vm.event.preview"></div>
+            </div>
+        </div>
+        <div class="row event-desc post-body">
+            <div class="col-md-9 col-centered">
+                <div class="post" reveal="animate6" ng-bind-html="vm.event.body"></div>
+            </div>
+        </div>
+    </article>
+</section>
+<div class="assoc" ui-view="associations@eventDetail"></div>'), e.put('app/industries/industry-detail/industry-detail-blockchain.view.html', '
+<div class="fade-block">
+    <header class="block-header header" reveal="fadeInFast">
+        <div class="container-fluid">
+            <div class="headline" reveal="animate4">
+                <div class="col-lg-5 col-md-11 col-sm-10 col-xs-12 row">
+                    <div class="title crumb" reveal="animate2"><a ui-sref="industries">Industry</a> <span class="slug">/ {{ vm.industry.title }}</span></div>
+                    <h1 class="page-type" reveal="animate4">{{ vm.industry.blocks.blockHeader.head }}</h1>
+                    <div class="skayline" reveal="animate6"></div>
+                    <div class="page-blurb" reveal="animate8">{{ vm.industry.blocks.blockHeader.desc }}</div>
+                </div>
+                <div class="col-xs-12 row">
+                    <div class="workwithus head" reveal="animate9"><a href="#contact" class="btn action-btn row" aria-label="Contact Us" du-smooth-scroll="">Let\'s connect</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-overlay"></div>
+        <webp classes="hero-image" url="{{ vm.industry.headerUrl }}" alt="Industry Detail Page Hero"></webp>
+    </header>
+</div>
+<section class="client-logo-strip">
+    <div class="feature-riser">
+        <div class="logo-slider" reveal="fadeIn">
+            <div class="" du-parallax="" x="vm.createParallaxLeftRight"><img class="clientlogos" src="/assets/images/logos/logo-sheet-long-horizontal-6ba38d43a8.svg" alt="Scalio Client Logos"></div>
+        </div>
+    </div>
+</section>
+<section class="advancing-tech">
+    <div class="block">
+        <div class="title" reveal="animate4">Advancing technology into a new age of investor opportunity</div>
+        <div class="desc" reveal="animate6">We partner with startups and large corporations to design and craft secure, engaging FinTech platforms built to scale from day-1.</div>
+    </div>
+</section>
+<section class="module dark client-commonwealth">
+    <div class="container">
+        <div class="block text-left">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 left">
+                    <div class="title" reveal="animate3">Reg A - Fractional Investing</div>
+                    <h3 reveal="animate4">Commonwealth</h3>
+                    <div class="blurb" reveal="animate5">Fractional share investment platform allowing investors (Regulation A & D) to purchase shares in Racehorses. Cutting edge technology containing
+                        full user verification (KYC/AML), Docusign e-signatures, payment processing (ACH, Debit/Credit), multiple offering support, and rich engagement & retention features to inspire
+                        investors long after their share purchase.
+                    </div>
+                    <div class="cta-button" reveal="animate7"><a href="#contact" class="btn action-btn row" aria-label="Contact Us" du-smooth-scroll="">Learn more</a></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 right">
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div du-parallax="" y="vm.createParallax">
+            <div class="bg-overlay"></div>
+            <webp classes="hero-image" url="/assets/images/industries/fintech-commonwealth-appgrid-694a05e70d.jpg" alt="Scalio Client Logos"></webp>
+        </div>
+    </div>
+</section>
+<section class="module dark client-casper">
+    <div class="container">
+        <div class="block text-right">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 left">
+                    <div>&nbsp;</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 right">
+                    <div class="title" reveal="animate3">Crypto &amp; Blockchain</div>
+                    <h3 reveal="animate4">Casper Labs</h3>
+                    <div class="blurb" reveal="animate5">Coinlist\'s most registered token sale of all time. One of the largest cryptocurrency launches in history. We designed and developed
+                        CasperLab\'s fully-response marketing site and custom dynamic CMS, as well as supporting digital marketing efforts surrounding the token sale.
+                    </div>
+                    <div class="cta-button" reveal="animate7"><a href="#contact" class="btn action-btn row" aria-label="Contact Us" du-smooth-scroll="">Learn more</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div du-parallax="" y="vm.createParallax">
+            <div class="bg-overlay"></div>
+            <webp classes="hero-image" url="/assets/images/industries/fintech-casper-6994f2cce2.jpg" alt="Scalio Client Logos"></webp>
+        </div>
+    </div>
+</section>
+<section class="module dark client-aptus">
+    <div class="container">
+        <div class="block text-left">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 left">
+                    <div class="title" reveal="animate3">Investor Platform</div>
+                    <h3 reveal="animate4">Aptus Capital Partners</h3>
+                    <div class="blurb" reveal="animate5">Impact Series Web Application which enables seamless collaboration between financial advisors and portfolio solution managers. The technology
+                        provides features such as custom risk assessment, portfolio recommendations, client reports, stress tests, client management, and much more.
+                    </div>
+                    <div class="cta-button" reveal="animate7"><a href="#contact" class="btn action-btn blue row" aria-label="Our Work" du-smooth-scroll="">Learn more</a></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 right">
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div du-parallax="" y="vm.createParallax">
+            <div class="bg-overlay"></div>
+            <webp classes="hero-image" url="/assets/images/industries/fintech-aptus-a01d2a732e.jpg" alt="Scalio Client Logos"></webp>
+        </div>
+    </div>
+</section>
+<section class="module stats statscounter" reveal="animate6">
+    <article class="container-fluid"><h5>Experience and results by the numbers</h5>
+        <div class="counter" data-counter-duration="1.4s" stats="">
+            <div class="col-lg-3 stat">
+                <div class="counting" data-count="850">0</div>
+                +<h5>Projects Completed</h5></div>
+            <div class="col-lg-3 stat">
+                <div class="counting" data-count="9">0</div>&nbsp;Clients<h5>Successfully Acquired</h5></div>
+            <div class="col-lg-3 stat">
+                <div class="counting" data-count="0">0</div>
+                <h5>Product Security Breaches</h5></div>
+            <div class="col-lg-3 stat">$
+                <div class="counting" data-count="1">0</div>
+                billion+<h5>Product Revenue</h5></div>
+        </div>
+    </article>
+</section>
+<section class="block-solutions">
+    <div class="container-fluid">
+        <div class="col-md-6 col1">
+            <div class="row message" reveal="animate3">Solutions built from the ground-up to deliver ROI</div>
+        </div>
+        <div class="col-md-6 col2">
+            <div class="row" reveal="animate3">
+                <div class="icon"><img src="/assets/images/icons/icon-1retention-f05fddfaa4.svg" alt=""></div>
+                <div class="title">Increase Customer Engagement &amp; Retention</div>
+                <div class="desc">Scalio designs and builds features that give your users a sense of purpose and progress that yield higher conversions on your performance KPI\'s.</div>
+            </div>
+            <div class="row" reveal="animate3">
+                <div class="icon"><img src="/assets/images/icons/icon-2revenue-19900aa85f.svg" alt=""></div>
+                <div class="title">Increase Monetization &amp; Revenue</div>
+                <div class="desc">We\'ll partner with your team to advise a winning product strategy roadmap that goes beyond product launch, leveraging user data to optimize your product UX and
+                    inspire additional features that grow revenue.
+                </div>
+            </div>
+            <div class="row" reveal="animate3">
+                <div class="icon"><img src="/assets/images/icons/icon-3reach-a2fd8a66de.svg" alt=""></div>
+                <div class="title">Increase Marketing &amp; Consumer Reach</div>
+                <div class="desc">With experts on our team that have delivered product growth from 1 to 100 million+ users, we can offer you a winning performance marketing strategy that delivers
+                    measurable ROI.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block-casestudies">
+    <div class="container-fluid">
+        <div class="title-block"><h6 reveal="animate3">{{ vm.industry.title }}</h6><h5 reveal="animate5">Our Specialties</h5>
+            <div reveal="animate7" class="skayline"></div>
+        </div>
+        <article class="module dark fade-block three-panel">
+            <div class="block-outer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col">
+                            <div class="slideblock">
+                                <h3>Fractional Investing Technology
+                                    <div class="category-title">(Reg A, Reg D, Reg CF)</div>
+                                </h3>
+                                <p>We are one of the industry leaders in building technology for the facilitation of fractional investing through Regulation A, D, & CF investments. We\'ve been on the
+                                    forefront of the fractional investing industry since the beginning, and our suite of technology is being used in multiple production applications across several
+                                    industries.</p>
+                                <div class="learnmore"><a class="morelink" href="#contact" du-smooth-scroll="">Learn more</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col">
+                            <div class="slideblock">
+                                <h3>Financial Dashboards
+                                    <div class="category-title">&nbsp;</div>
+                                </h3>
+                                <p>Data visualization and reporting are key to any financial platform, and a well designed dashboard offers insights that drive impactful decisions. We have a plethora
+                                    of experience building effective dashboards to present the data that matters.</p>
+                                <div class="learnmore"><a class="morelink" href="#contact" du-smooth-scroll="">Learn more</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col">
+                            <div class="slideblock">
+                                <h3>Wealth Management Platforms
+                                    <div class="category-title">&nbsp;</div>
+                                </h3>
+                                <p>We\'ve built multiple wealth management platforms from scratch for investors, brokers, financial advisors, and private institutions alike. We provide
+                                    industry-leading knowledge in building custom financial software that is intuitive, secure, and adaptable.</p>
+                                <div class="learnmore"><a class="morelink" href="#contact" du-smooth-scroll="">Learn more</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <div class="bg-overlay"></div>
+                <webp classes="hero-image" url="/assets/images/industries/fintech-group-3ce885c969.jpg" alt="Scalio Specialty Block"></webp>
+            </div>
+        </article>
+        <article class="row discovery keep">
+            <div class="col-md-4 col-md-push-8 top" reveal="leftToRight1">
+                <div class="block-text right"><h3>Cryptocurrecy Digital Marketing</h3>
+                    <div class="category-title">Crypto-Blockchain</div>
+                    <p>We have designed and delivered several marketing campaigns related to cryptocurrency platforms, including Casper Network, Keep Network and Thesis. Cryptocurrency moves with
+                        unparalleled speed, and we offer fully custom CMS dashboards that empower our clients to keep up with the rapidly changing industry via dynamic data control. We focus not only
+                        on delivering high quality website content, but also ensure we understand the underlying technology to control that content.</p>
+                    <div class="learnmore"><a class="morelink" href="#contact" du-smooth-scroll="">Learn more</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4" reveal="rightToLeft1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp classes="img-responsive item" url="/assets/images/industries/fintech-keep-63a47c1f83.jpg" alt="Scalio Client: Keep"></webp>
+                </div>
+            </div>
+        </article>
+        <article class="module dark fade-block specialize">
+            <div class="container">
+                <div class="block text-left">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 left"><h3 reveal="animate4">We specialize in digital revenue growth.</h3>
+                            <div class="blurb" reveal="animate5">Scalio offers scaleable product strategy that will drive engagement, retention and monetization. Learn how our cross-functional
+                                technologists have grown digital products from 1 to 100 million+ users.
+                            </div>
+                            <div class="cta-button" reveal="animate7"><a href="#contact" class="btn action-btn row" aria-label="Contact Us" du-smooth-scroll="">Learn more</a></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 right">
+                            <div>&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <div du-parallax="" y="vm.createParallax">
+                    <div class="bg-overlay"></div>
+                    <webp classes="hero-image" url="/assets/images/industries/fintech-guy-dbae3d7507.jpg" alt="Scalio Specialization"></webp>
+                </div>
+            </div>
+        </article>
+        <article class="row discovery cwealth">
+            <div class="col-md-4 top" reveal="rightToLeft1">
+                <div class="block-text left"><h3>FinTech Applications</h3>
+                    <div class="category-title">Investment Platforms</div>
+                    <p>We offer proven experience in cross-platform FinTech applications, securely designed to scale offerings, engaging content and retention features to investors. Whether you need a
+                        user-focused mobile app, B2B web system, or anything in between - we have the expertise to build it right.</p>
+                    <div class="learnmore"><a href="#contact" aria-label="Contact Us" du-smooth-scroll="">Learn more</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" reveal="leftToRight1">
+                <div class="block-image row">
+                    <div class="bg-overlay"></div>
+                    <webp classes="img-responsive item" url="/assets/images/industries/fintech-commonwealth-app-14a14b62e8.jpg" alt="Scalio Client: Commonwealth"></webp>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="testimonialstrip splashstrip color">
+    <div class="bg-pattern"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-centered"><h5 reveal="animate6">Acclaimed technology. Unmatched innovation. Tested quality.</h5>
+                <div class="block-testimonials">
+                    <testimonials-carousel></testimonials-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="recognition" class="module recognition">
+    <article class="container">
+        <div class="title" reveal="animate3">What we love to do</div>
+        <h3 reveal="animate4">Recognized for Innovation</h3>
+        <div class="row awards" reveal="animate7">
+            <div class="col-md-12">
+                <div class="col-lg-3 col-md-6">
+                    <figure>
+                        <div class="logo"><img src="/assets/images/logos/recognition-expertise-de6f903b82.svg" style="width:200px;" alt="Best Mobile App Developers in San Francisco"></div>
+                        <figcaption><strong>Top Mobile Agency</strong>
+                            <div class="site"><span class="award">Expertise</span></div>
+                            <p>Scalio has been recognized as a top 10 mobile development agency in San Francisco.</p></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure>
+                        <div class="logo"><img src="/assets/images/logos/recognition-clutch-topdevs-72c2665f45.png" style="width: 200px;" alt="Top San Francisco Developers"></div>
+                        <figcaption><strong>Top Digital Agency</strong>
+                            <div class="site"><span class="award">Clutch</span></div>
+                            <p>Scalio has been recognized as a top 3 digital agency, 2 years in a row by Clutch.</p></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure>
+                        <div class="logo"><img src="/assets/images/logos/recognition-clutch-mobile-c73ae484e1.png" style="width: 200px;" alt="Top App Development Agency"></div>
+                        <figcaption><strong>Top App Developer</strong>
+                            <div class="site"><span class="award">Clutch</span></div>
+                            <p>Scalio has been recognized as a top mobile development agency, 3 years in a row by Clutch.</p></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <figure>
+                        <div class="logo"><img style="width:240px" src="/assets/images/logos/recognition-goodfirms-f4ef1fd65c.svg" alt="Top AR Agency"></div>
+                        <figcaption><strong>Top AR Agency</strong>
+                            <div class="site"><span class="award">GoodFirms</span></div>
+                            <p>Scalio has been recognized as a top AR mobile development agency by GoodFirms.</p></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+<section class="block-cta" id="contact">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="cta-contact col-md-6" ui-view="ctacontact@industryDetail"></div>
+            <div class="cta-testimonials col-md-6 col-centered" ui-view="ctatestimonials@industryDetail"></div>
+        </div>
+    </div>
+</section>
