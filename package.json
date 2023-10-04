@@ -11,16 +11,17 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "@loadable/component": "^5.13.1",
     "gatsby": "^4.13.1",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-react-helmet": "^5.13.0",
-    "react": "^18.1.0",
+    "react": "16.14.0",
     "react-accessible-accordion": "^5.0.0",
-    "react-dom": "^18.1.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^6.1.0",
     "react-image-lightbox": "^5.1.4",
     "react-modal-video": "^1.2.8",
@@ -30,6 +31,7 @@
     "recoil": "^0.7.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "prettier": "2.0.5"
   }
 }

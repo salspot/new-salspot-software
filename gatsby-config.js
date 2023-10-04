@@ -10,6 +10,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: '/new-salspot-software',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
