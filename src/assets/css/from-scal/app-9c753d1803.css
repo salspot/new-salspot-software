@@ -10553,3 +10553,12 @@ footer .video-block .video-block-container .bg-overlay {
 .contact .locs {
     margin: 100px 0
 }
+
+
+.block-image {
+    height: 750px;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
