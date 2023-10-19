@@ -80,8 +80,9 @@ body {
 }
 
 img {
-    /*max-width: 100%;*/
-    /*height: auto;*/
+    max-width: initial!important;
+    height: auto!important;
+    width: auto!important;
 }
 
 h1 {
@@ -13927,3 +13928,14 @@ Go Top CSS
     background: radial-gradient(farthest-side at top, #000 0, #161616 100%);
     color: #fff
 }
+
+.services .accordion {
+    border: none;
+    border-radius: 0;
+}
+
+.services .accordion .accordion__button {
+    background-color: transparent;
+}
+
+
