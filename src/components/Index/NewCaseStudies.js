@@ -12,13 +12,13 @@ const NewCaseStudies = () => {
                         <h5>Industry case studies</h5>
                     </div>
 
-                    <NewCaseStudyDetails/>
                     <NewCaseStudyDetails style={'right'}/>
+                    <NewCaseStudyDetails style={'left'}/>
 
                     <CallToActionBanner/>
 
-                    <NewCaseStudyDetails/>
                     <NewCaseStudyDetails style={'right'}/>
+                    <NewCaseStudyDetails style={'left'}/>
 
                     <div className="block-cta-button">
                         <a className="btn action-btn row seemore"

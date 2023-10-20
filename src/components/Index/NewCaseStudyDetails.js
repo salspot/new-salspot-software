@@ -2,6 +2,11 @@ import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 const NewCaseStudyDetails = ({style = 'left'}) => {
+    const styleClasses = {
+        right: ['col-lg-4 order-lg-last top', 'col-lg-8'],
+        left: ['col-lg-4 top', 'col-lg-8']
+    }
+
     const items = [
         {
             heading: 'Support and Maintenance',
@@ -18,16 +23,16 @@ const NewCaseStudyDetails = ({style = 'left'}) => {
     ]
 
     return (
-        <article class="row discovery">
-            <div class="col-lg-4 top">
-                <div class="block-text left">
-                    <h2><small>01</small> Discover</h2>
+        <article className="row discovery">
+            <div className={styleClasses[style][0]}>
+                <div className={`block-text ${style}`}>
+                    < h3>< small> < /small>Travel Business</h3>
                     <p>We find what works for your business through research, analysis, and prototyping. We'll immerse
                         ourselves in your brand and present relevant research before we identify the most suitable
                         solutions for your model. To mitigate risk, the discovery phase is crucial to lay the groundwork
                         for the design and development phases.</p>
 
-                    <Accordion>
+                    <Accordion flush alwaysOpen>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Accordion Item #1</Accordion.Header>
                             <Accordion.Body>
@@ -56,9 +61,9 @@ const NewCaseStudyDetails = ({style = 'left'}) => {
 
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="block-image row">
-                    <div class="bg-overlay"></div>
+            <div className={styleClasses[style][1]}>
+                <div className="block-image">
+                    <div className="bg-overlay"></div>
                     <img className="" alt="Our Approach - Step 1: Discovery"
                          src="https://scal.io/assets/images/services/discover-8e11dfe8e7.jpg"></img>
                 </div>
