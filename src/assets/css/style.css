@@ -1287,10 +1287,10 @@ Navbar Area CSS
     margin-left: auto;
 }
 
-.container, .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*.container, .container-fluid {*/
+/*    padding-left: 15px;*/
+/*    padding-right: 15px;*/
+/*}*/
 
 .container-fluid {
     max-width: 2000px;
@@ -13642,8 +13642,8 @@ Go Top CSS
 
 .services .approach article {
     margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /*margin-left: 100px;*/
+    /*margin-right: 100px;*/
 }
 
 .services .approach .block-text {
@@ -13664,7 +13664,7 @@ Go Top CSS
 }
 
 .services .approach .block-text.left {
-    margin: 30px -300px 0 0px;
+    margin: 30px -450px 0 250px;
     min-height: 675px
 }
 
@@ -13683,7 +13683,7 @@ Go Top CSS
 }
 
 .services .approach .block-text.right {
-    margin: 30px 0px 0 -300px;
+    margin: 30px 250px 0 -450px;
     min-height: 675px
 }
 
@@ -13959,4 +13959,12 @@ Go Top CSS
 }
 .accordion-header {
     width: 100%;
+}
+
+.workwithus, .title-block, .block-cta-button {
+    text-align: center;
+}
+.row>* {
+    padding-right: initial;
+    padding-left: initial;
 }
