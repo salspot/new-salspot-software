@@ -13,29 +13,16 @@ const NewCaseStudies = () => {
                     </div>
 
                     <NewCaseStudyDetails style={'right'}/>
-                    <NewCaseStudyDetails style={'right'}/>
-                    <NewCaseStudyDetails style={'right'}/>
-                    <NewCaseStudyDetails style={'right'}/>
-                    <NewCaseStudyDetails style={'left'}/>
-                    <NewCaseStudyDetails style={'left'}/>
-                    <NewCaseStudyDetails style={'left'}/>
-                    <NewCaseStudyDetails style={'left'}/>
-
-
-                    <NewCaseStudyDetails style={'right'}/>
                     <NewCaseStudyDetails style={'left'}/>
                     <NewCaseStudyDetails style={'right'}/>
                     <NewCaseStudyDetails style={'left'}/>
+                    {/*<CallToActionBanner/>*/}
 
-                    <CallToActionBanner/>
-
-                    <NewCaseStudyDetails style={'left'}/>
-
-                    <div className="block-cta-button">
-                        <a className="btn action-btn row seemore"
-                           href="https://scal.io/work/category/real-estate-construction">
-                            See more of our work</a>
-                    </div>
+                    {/*<div className="block-cta-button">*/}
+                    {/*    <a className="btn action-btn row seemore"*/}
+                    {/*       href="https://scal.io/work/category/real-estate-construction">*/}
+                    {/*        See more of our work</a>*/}
+                    {/*</div>*/}
 
 
                 </div>

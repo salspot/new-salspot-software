@@ -25,12 +25,6 @@ const Home = () => {
             <VideoBanner/>
             {/*<HeroBanner/>*/}
             <NewCaseStudies/>
-
-            <TeamMember/>
-            <Testimonials/>
-            <Partner/>
-            <OurBlog/>
-            <ProjectStartArea/>
           <HowCanWeHelpBanner/>
           <Footer/>
         </Layout>
