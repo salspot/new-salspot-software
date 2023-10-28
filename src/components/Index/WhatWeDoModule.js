@@ -5,7 +5,7 @@ const WhatWeDoModule = () => {
         <section className="module light whatwedo">
             <article className="container">
                 <div className="row">
-                    <div className="col-lg-10 col-md-11 col-sm-10 col-xs-12">
+                    <div className="col-lg-10 col-md-11  col-12">
                         <div className="title " data-sr-id="17">What we do</div>
                         <h2
                             data-sr-id="18">Innovative products delivering engaging experiences at scale.</h2>
@@ -20,7 +20,7 @@ const WhatWeDoModule = () => {
                     <div className="card-wrapper">
                         <div className="row">
                             <ul className="card services">
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12 "
+                                <li className="col-lg-4 col-md-6  col-12 "
                                     data-sr-id="20">
                                     <figure>
                                         <figcaption>
@@ -29,25 +29,8 @@ const WhatWeDoModule = () => {
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
-                                    data-sr-id="21">
-                                    <figure>
-                                        <figcaption>
-                                            <div className="fig-block"><i className="icon-service-design"></i><h4
-                                                className="heading">Design &amp; User Experience</h4></div>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
-                                    data-sr-id="22">
-                                    <figure>
-                                        <figcaption>
-                                            <div className="fig-block"><i className="icon-service-growth"></i><h4
-                                                className="heading">Strategy &amp; Growth</h4></div>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+
+                                <li className="col-lg-4 col-md-6  col-12"
                                     data-sr-id="23">
                                     <figure>
                                         <figcaption>
@@ -56,7 +39,8 @@ const WhatWeDoModule = () => {
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+
+                                <li className="col-lg-4 col-md-6  col-12"
                                     data-sr-id="24">
                                     <figure>
                                         <figcaption>
@@ -65,7 +49,28 @@ const WhatWeDoModule = () => {
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li className="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+
+                                <li className="col-lg-4 col-md-6  col-12"
+                                    data-sr-id="21">
+                                    <figure>
+                                        <figcaption>
+                                            <div className="fig-block"><i className="icon-service-design"></i><h4
+                                                className="heading">Design &amp; User Experience</h4></div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li className="col-lg-4 col-md-6  col-12"
+                                    data-sr-id="22">
+                                    <figure>
+                                        <figcaption>
+                                            <div className="fig-block"><i className="icon-service-growth"></i><h4
+                                                className="heading">Strategy &amp; Growth</h4></div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+
+                                <li className="col-lg-4 col-md-6  col-12"
                                     data-sr-id="25">
                                     <figure>
                                         <figcaption>

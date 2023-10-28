@@ -46,7 +46,7 @@ const Footer = () => {
                     <div className="col-lg-2 col-sm-6">
                         <div className="single-footer-widget pl-5">
                             <h3>Explore</h3>
-                            
+
                             <ul className="footer-links-list">
                                 <li>
                                     <Link to="/">
@@ -117,7 +117,7 @@ const Footer = () => {
 
                             <ul className="footer-contact-info">
                                 <li>
-                                    <i className='bx bx-map'></i> 
+                                    <i className='bx bx-map'></i>
                                     175 5th Ave, New York, NY 10010, <br /> United States
                                 </li>
                                 <li>
@@ -140,7 +140,7 @@ const Footer = () => {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
-                            <p>Copyright @{currentYear} <strong>Rewy</strong> All rights reserved <a target="_blank" href="https://envytheme.com/" rel="noreferrer">EnvyTheme</a></p>
+                            <p>Copyright @{currentYear} <strong className="text-danger">Salspot Software</strong> All rights reserved</p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
