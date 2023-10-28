@@ -1,11 +1,13 @@
 import React from 'react';
+import WhiteTechStackImage from '../../assets/images/white-tech-stack.png'
+import WhiteTechStackImage2Lines from '../../assets/images/white-tech-stack-2-lines.png'
 
 const ClientLogos = () => (
     <div className="row message-row">
-        <span className="block-left">Trusted by</span>
+        <span className="block-left">Technology experts</span>
         <span className="block-right">
-        <img className="onerow img-responsive" src="https://scal.io/assets/images/logos/logo-sheet-white-single-39a1776302.svg" alt="Salspot Client Logos"/>
-        <img className="tworow img-responsive" src="/assets/images/logos/logo-sheet-white-double-6b4174a6e3.svg" alt="Salspot Client Logos"/>
+        <img className="onerow img-responsive" src={WhiteTechStackImage} alt="Salspot Technology Stack"/>
+        <img className="tworow img-responsive" src={WhiteTechStackImage2Lines} alt="Salspot Technology Stack"/>
         </span>
     </div>
 )
