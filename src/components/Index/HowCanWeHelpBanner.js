@@ -7,7 +7,7 @@ const HowCanWeHelpBanner = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-8">
-            <div className="message">How can we help you?</div>
+            <div className="message">Need a development partner?</div>
           </div>
           <div className="col-md-4">
             <div className="button-group"><a href="/contact">

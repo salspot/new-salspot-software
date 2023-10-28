@@ -82,9 +82,9 @@ body {
 }
 
 img {
-    max-width: initial!important;
-    height: auto!important;
-    width: auto!important;
+    max-width: initial;
+    height: auto;
+    width: auto;
 }
 
 h1 {
@@ -13967,4 +13967,133 @@ Go Top CSS
 .row>* {
     padding-right: initial;
     padding-left: initial;
+}
+
+
+.module.dark {
+    z-index: 10;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.home section {
+    text-align: left;
+}
+
+section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.module.dark .hero-container {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.module.dark .hero-container, .notfound .fourohfour {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    right: 0;
+}
+
+.module.dark .hero-container .bg-overlay {
+    opacity: .8;
+}
+
+.module .hero-container .bg-overlay {
+    opacity: .3;
+}
+.bg-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+    opacity: .68;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: linear-gradient(150deg,#000 28%,#181818 49%,#000 74%);
+}
+
+
+.module.dark .block {
+    text-align: left;
+    width: 100%;
+}
+.module .title {
+    color: #D5333E;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: initial;
+    letter-spacing: 0;
+}
+.module h3 {
+    color: #fff;
+    text-shadow: 1px 1px 15px rgba(0,0,0,.15);
+    font-size: 55px;
+    font-weight: 600;
+}
+.module.dark .blurb {
+    color: #eee;
+}
+.module .cta-button {
+    margin-top: 30px;
+}
+.module .cta-button a {
+    background-color: #D5333E;
+    border-color: #D5333E;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0;
+}
+
+a.btn {
+    padding: 0 5px;
+}
+.action-btn {
+    border-radius: 34px;
+    background-color: transparent;
+    color: #161616;
+    margin: 10px 5px;
+    outline: 0;
+    border: 2px solid #161616;
+    padding: 10px 20px;
+    min-width: 200px;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: .3s;
+    transition-property: box-shadow,transform;
+}
+
+.module.dark .hero-container .hero-image {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 1000px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.module .hero-container .hero-image {
+    width: 100%;
+    max-height: 700px;
+    min-height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
 }
