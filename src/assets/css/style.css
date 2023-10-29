@@ -14697,3 +14697,29 @@ a.btn {
 .footer {
     background: #161616;
 }
+
+body.inverse #gatsby-focus-wrapper {
+    background: radial-gradient(farthest-side at top,#000 0,#161616 100%);
+    color: #fff;
+}
+
+
+.header .skayline {
+    margin: 15px 0 25px;
+}
+.skayline {
+    height: 3px;
+    width: 55px;
+    background-color: #D5333E;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}

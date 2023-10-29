@@ -1,25 +1,30 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Layout from "../components/App/Layout"
 import Navbar from "../components/App/Navbar"
-import PageBanner from '../components/Common/PageBanner'
 import Footer from "../components/App/Footer"
-import ContactInfo from '../components/Contact/ContactInfo'
-import ContactForm from '../components/Contact/ContactForm'
+import SecondaryPageHeader from "../components/SecondaryPageHeader"
+import "../assets/css/contact-page.css"
+
 const Contact = () => {
-    return (
-        <Layout>
-            <Navbar />
-            <PageBanner
-                pageTitle="Contact" 
-                homePageText="Home" 
-                homePageUrl="/" 
-                activePageText="Contact" 
-            />
-            <ContactInfo />
-            <ContactForm />
-            <Footer />
-        </Layout>
-    );
+
+  useEffect(() => {
+    // 👇 add class to body element
+    document.body.classList.add('inverse');
+
+    return () => {
+      // 👇️ removing classes from body element
+      // when the component unmounts
+      document.body.classList.remove('inverse');
+    }
+  }, []);
+
+  return (
+    <Layout>
+      <Navbar className="navbar-fixed-top" inverse={true}/>
+      <SecondaryPageHeader/>
+      <Footer/>
+    </Layout>
+  );
 }
 
 export default Contact

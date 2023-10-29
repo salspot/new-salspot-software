@@ -1,0 +1,48 @@
+.header {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.header .headline {
+    margin: 220px 0 80px 100px;
+}
+
+body.inverse .body-content {
+    background: radial-gradient(farthest-side at top, #000 0, #161616 100%);
+    color: #fff;
+}
+
+.page-container .body-content {
+    background-color: #fff;
+    background: radial-gradient(farthest-side at top, #fff 0, #f8f8f8 100%);
+}
+
+body.inverse .is-sticky {
+    background-color: #161616!important;
+    color: white;
+}
+body.inverse .navbar-area.is-sticky .tarn-nav .navbar .navbar-nav .nav-item a, body.inverse .navbar-area.is-sticky .default-btn {
+    color: white;
+}
+
+body.inverse .navbar-area.is-sticky .logo-white {
+    display: block;
+}
+body.inverse .navbar-area.is-sticky .logo-black {
+    display: none;
+}
+
+.header .title {
+    color: #D5333E;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.header .headline h1 {
+    font-size: 72px;
+    line-height: 1.2;
+}

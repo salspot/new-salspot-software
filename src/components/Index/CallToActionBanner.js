@@ -10,7 +10,7 @@ const CallToActionBanner = () => {
           </div>
           <div className="col-md-5">
             <div className="workwithus">
-              <a href="#contact" className="btn action-btn row" aria-label="Contact Us">let's talk</a>
+              <a href="#contact" className="btn action-btn row" aria-label="contact Us">let's talk</a>
             </div>
           </div>
         </div>

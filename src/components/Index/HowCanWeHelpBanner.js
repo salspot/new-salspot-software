@@ -10,7 +10,7 @@ const HowCanWeHelpBanner = () => {
             <div className="message">Need a development partner?</div>
           </div>
           <div className="col-md-4">
-            <div className="button-group"><a href="/contact">
+            <div className="button-group"><a href="/src/pages/contact">
               <button type="button" className="btn action-btn" aria-label="Lets get started">
                 <span className="btn-title ng-binding">lets get started</span>
               </button>

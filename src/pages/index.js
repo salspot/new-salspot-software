@@ -12,7 +12,7 @@ import WhatWeDoModule from "../components/Index/WhatWeDoModule";
 const Home = () => {
     return (
         <Layout>
-            <Navbar/>
+            <Navbar className="navbar-fixed-top"/>
             <VideoBanner/>
             {/*<HeroBanner/>*/}
             <NewCaseStudies/>

@@ -14,6 +14,7 @@ const NavbarThree = () => {
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
     document.addEventListener("scroll", () => {
+      console.log('document.body.classList', document.body.classList);
       if (window && window.scrollY > 170) {
         elementId.classList.add("is-sticky");
       } else {
