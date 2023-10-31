@@ -25,7 +25,7 @@ const VideoBanner = () => {
                     <div className="row">
                         <h1>Tech forward. Human focused.</h1>
 
-                        <div className="tagline show-on-desktop ng-isolate-scope">We're a digital product agency <span className="highlight">advancing technology</span> for
+                        <div className="tagline show-on-desktop ng-isolate-scope">We're a software development agency <span className="highlight">building technology</span> for
                             <br></br>
                             <span className="textdecode">
                                 <TextScramble phrasesToDecode={phrasesToDecode}/>

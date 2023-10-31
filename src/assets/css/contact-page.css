@@ -322,3 +322,13 @@ ol.counter-list li:before {
     text-align: center;
     counter-increment: item;
 }
+
+.header .headline .page-blurb {
+    line-height: 1.5;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 0;
+}
+body.inverse .page-blurb, body.inverse .page-type {
+    color: #fff!important;
+}
