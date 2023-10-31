@@ -4,8 +4,6 @@ import Navbar from "../components/App/Navbar"
 import Footer from "../components/App/Footer"
 import SecondaryPageHeader from "../components/SecondaryPageHeader"
 import "../assets/css/contact-page.css"
-import ContactForm from "../components/ContactForm";
-import NewCaseStudies from "../components/Index/NewCaseStudies";
 
 const Contact = () => {
 
@@ -24,7 +22,6 @@ const Contact = () => {
                              subtext="We've completed over 20 projects accross multiple industries in client work.
                              Successfully collaborated with more than 10 partners from countries in the EU and USA.
                              Below are some of the projects we're able to share with you."/>
-        <NewCaseStudies/>
         <Footer/>
       </div>
 
