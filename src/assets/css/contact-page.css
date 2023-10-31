@@ -46,3 +46,279 @@ body.inverse .navbar-area.is-sticky .logo-black {
     font-size: 72px;
     line-height: 1.2;
 }
+
+.contact {
+    outline: none;
+}
+
+.contact .contact-form {
+    text-align: right;
+}
+
+
+.inverse .body-content {
+    background: radial-gradient(farthest-side at top,#000 0,#161616 100%);
+    color: #fff;
+}
+
+.contact .contact-form .cpanel {
+    text-align: left;
+    background-color: #1f1f1f;
+    border-color: #444;
+    padding: 125px 0;
+}
+
+.contact .contact-form .form-block {
+    max-width: 480px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.contact .contact-form .contact-inputs {
+    background: linear-gradient(to right,rgba(22,22,22,0) 0,#1f1f1f 100%);
+}
+
+.contact .contact-form .row>[class*=col-] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 30px;
+}
+.contact .contact-form .contact-info {
+    background-color: transparent;
+}
+
+.contact .contact-form .cpanel h3 {
+    margin-bottom: 40px;
+}
+
+
+.contact section {
+    text-align: left
+}
+
+.contact .contact-form {
+    text-align: right
+}
+
+.contact .contact-form .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.contact .contact-form .row>[class*=col-] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 30px
+}
+
+.contact .contact-form .form-block {
+    max-width: 480px;
+    min-width: 300px;
+    margin: auto
+}
+
+.contact .contact-form .info-block {
+    max-width: 480px;
+    min-width: 300px;
+    margin-left: 70px;
+    margin-right: 70px
+}
+
+@media (max-width: 768px) {
+    .contact .contact-form .info-block {
+        margin:0
+    }
+
+    .contact .contact-form .cpanel h3 {
+        font-size: 22px
+    }
+}
+
+.contact .contact-form .cpanel {
+    text-align: left;
+    background-color: #1f1f1f;
+    border-color: #444;
+    padding: 125px 0
+}
+
+.contact .contact-form .cpanel h3 {
+    margin-bottom: 40px
+}
+
+@media (max-width: 768px) {
+    .contact .contact-form .cpanel {
+        padding:65px 15px
+    }
+}
+
+.contact .contact-form .contact-inputs {
+    background: linear-gradient(to right,rgba(22,22,22,0) 0,#1f1f1f 100%);
+}
+
+@media (max-width: 992px) {
+    .contact .contact-form .contact-inputs {
+        width:100%
+    }
+}
+
+.contact .contact-form .contact-info {
+    background-color: transparent
+}
+
+.contact .locs {
+    margin: 100px 0
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #444;
+    padding: 30px 5px;
+    font-size: 20px;
+    box-shadow: none;
+    transition: color .3s ease 0s,opacity .3s ease 0s;
+}
+
+.form-control {
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control, output {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    display: block;
+}
+.btn, .btn-danger.active, .btn-danger:active, .btn-default.active, .btn-default:active, .btn-info.active, .btn-info:active, .btn-primary.active, .btn-primary:active, .btn-warning.active, .btn-warning:active, .btn.active, .btn:active, .dropdown-menu>.disabled>a:focus, .dropdown-menu>.disabled>a:hover, .form-control, .navbar-toggle, .open>.btn-danger.dropdown-toggle, .open>.btn-default.dropdown-toggle, .open>.btn-info.dropdown-toggle, .open>.btn-primary.dropdown-toggle, .open>.btn-warning.dropdown-toggle {
+    background-image: none;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+textarea.form-control {
+    height: auto;
+}
+
+.form-group textarea.form-control {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.action-btn.blue.disabled, .action-btn.blue[disabled], .action-btn.red.disabled, .action-btn.red[disabled] {
+    cursor: not-allowed;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
+.action-btn.red, .action-btn.red:active, .action-btn.red:link, .action-btn.red:visited {
+    border-color: #D5333E;
+    background-color: #D5333E;
+    color: #fff;
+}
+.action-btn.red, .action-btn.red:active, .action-btn.red:link, .action-btn.red:visited {
+    border-color: #D5333E;
+    background-color: #D5333E;
+    color: #fff;
+}
+
+.action-btn.red:hover {
+    color: #fff;
+    background-color: #861c23;
+    border-color: #b1242e;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
+
+ol.counter-list li {
+    opacity: .8;
+    font-weight: 300;
+    line-height: 1.88;
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 48px;
+}
+
+ol.counter-list li:before {
+    content: counter(item) "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #161616;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    counter-increment: item;
+}
+
+ol.counter-list li {
+    opacity: .8;
+    font-weight: 300;
+    line-height: 1.88;
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 48px;
+}
+
+ol.counter-list {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+ol.counter-list li:before {
+    content: counter(item) "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #161616;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    counter-increment: item;
+}

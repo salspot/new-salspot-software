@@ -12472,14 +12472,6 @@ Contact Area CSS
     text-align: center;
 }
 
-.contact-form {
-    padding: 40px;
-    margin-left: 15px;
-    -webkit-box-shadow: 0 0 20px rgba(158, 158, 158, 0.16);
-    box-shadow: 0 0 20px rgba(158, 158, 158, 0.16);
-    background-color: #ffffff;
-}
-
 .contact-form form .form-group .form-control {
     height: 55px;
     border-radius: 0;
