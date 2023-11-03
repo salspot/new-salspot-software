@@ -20,22 +20,22 @@ const WhatWeDoModule = () => {
                     <div className="card-wrapper">
                         <div className="row">
                             <ul className="card services">
-                                <li className="col-lg-4 col-md-6  col-12 "
-                                    data-sr-id="20">
-                                    <figure>
-                                        <figcaption>
-                                            <div className="fig-block"><i className="icon-service-mobile"></i><h4
-                                                className="heading">Mobile Engineering</h4></div>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-
                                 <li className="col-lg-4 col-md-6  col-12"
                                     data-sr-id="23">
                                     <figure>
                                         <figcaption>
                                             <div className="fig-block"><i className="icon-service-web"></i><h4
                                                 className="heading">Web Engineering</h4></div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li className="col-lg-4 col-md-6  col-12 "
+                                    data-sr-id="20">
+                                    <figure>
+                                        <figcaption>
+                                            <div className="fig-block"><i className="icon-service-mobile"></i><h4
+                                              className="heading">Mobile Engineering</h4></div>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -51,6 +51,16 @@ const WhatWeDoModule = () => {
                                 </li>
 
                                 <li className="col-lg-4 col-md-6  col-12"
+                                    data-sr-id="22">
+                                    <figure>
+                                        <figcaption>
+                                            <div className="fig-block"><i className="icon-service-growth"></i><h4
+                                              className="heading">Web3 &amp; Blockchain</h4></div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li className="col-lg-4 col-md-6  col-12"
                                     data-sr-id="21">
                                     <figure>
                                         <figcaption>
@@ -59,15 +69,7 @@ const WhatWeDoModule = () => {
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li className="col-lg-4 col-md-6  col-12"
-                                    data-sr-id="22">
-                                    <figure>
-                                        <figcaption>
-                                            <div className="fig-block"><i className="icon-service-growth"></i><h4
-                                                className="heading">Strategy &amp; Growth</h4></div>
-                                        </figcaption>
-                                    </figure>
-                                </li>
+
 
 
                                 <li className="col-lg-4 col-md-6  col-12"

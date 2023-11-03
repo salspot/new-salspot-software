@@ -1,75 +1,55 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
-// import 'bootstrap/dist/css/bootstrap.min.css'
-const NewCaseStudyDetails = ({style = 'left'}) => {
-    const styleClasses = {
-        right: ['col-lg-4 order-lg-last top', 'col-lg-8'],
-        left: ['col-lg-4 top', 'col-lg-8']
-    }
 
-    const items = [
-        {
-            heading: 'Support and Maintenance',
-            content: 'Our team studies your product positioning, target market, user base. We analyze the competitive landscape, existing analytics, and product state.'
-        },
-        {
-            heading: 'Support and Maintenance',
-            content: 'Our team studies your product positioning, target market, user base. We analyze the competitive landscape, existing analytics, and product state.'
-        },
-        {
-            heading: 'Support and Maintenance',
-            content: 'Our team studies your product positioning, target market, user base. We analyze the competitive landscape, existing analytics, and product state.'
-        }
-    ]
+const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content}) => {
+  const {title, description, accordionList} = content;
+  // styleClasses holds styles for right and left variations. Each list holds a set of classes for different elements in the page.
+  const styleClasses = {
+    right: ['col-lg-4 order-lg-last top', 'col-lg-8'],
+    left: ['col-lg-4 top', 'col-lg-8']
+  }
 
+  if (!content.title) {
+    return '';
+  }
+
+  const accordionItems = accordionList && accordionList.map((item, index) => {
     return (
-        <article className="row discovery">
-            <div className={styleClasses[style][0]}>
-                <div className={`block-text ${style}`}>
-                    < h3>< small> < /small>Travel Business</h3>
-                    <p>We find what works for your business through research, analysis, and prototyping. We'll immerse
-                        ourselves in your brand and present relevant research before we identify the most suitable
-                        solutions for your model. To mitigate risk, the discovery phase is crucial to lay the groundwork
-                        for the design and development phases.</p>
+      <Accordion.Item eventKey={index.toString()}>
+        <Accordion.Header>{item.title}</Accordion.Header>
+        <Accordion.Body>
+          {item.body}
+        </Accordion.Body>
+      </Accordion.Item>
+    );
+  })
 
-                    <Accordion flush alwaysOpen>
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header>Accordion Item #1</Accordion.Header>
-                            <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                            <Accordion.Header>Accordion Item #2</Accordion.Header>
-                            <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>
+  return (
+    <article className="row discovery">
+      <div className={styleClasses[style][0]}>
+        <div className={`block-text ${style}`}>
+          < h3>< small> < /small>{title}</h3>
+          <p>{description}</p>
 
-                </div>
-            </div>
-            <div className={styleClasses[style][1]}>
-                <div className="block-image">
-                    <div className="bg-overlay"></div>
-                    <img className="" alt="Our Approach - Step 1: Discovery"
-                         src="https://scal.io/assets/images/services/discover-8e11dfe8e7.jpg"></img>
-                </div>
-            </div>
-        </article>
-    )
+          <Accordion flush alwaysOpen>
+            {accordionItems}
+          </Accordion>
+
+        </div>
+      </div>
+      <div className={styleClasses[style][1]}>
+        <div className="block-image">
+          <div className="bg-overlay"></div>
+          <img className="" alt="Our Approach - Step 1: Discovery"
+               src="https://scal.io/assets/images/services/discover-8e11dfe8e7.jpg"></img>
+        </div>
+      </div>
+    </article>
+  )
 }
 
+export const CaseStudyStyle = {
+  LEFT: 'left',
+  RIGHT: 'right'
+}
 export default NewCaseStudyDetails
