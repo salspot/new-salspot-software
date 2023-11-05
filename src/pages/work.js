@@ -3,7 +3,6 @@ import Layout from "../components/App/Layout"
 import Navbar from "../components/App/Navbar"
 import Footer from "../components/App/Footer"
 import SecondaryPageHeader from "../components/SecondaryPageHeader"
-import "../assets/css/contact-page.css"
 import NewCaseStudyContainer from "../components/NewCaseStudyContainer";
 import NewCaseStudyDetails, {CaseStudyStyle} from "../components/Index/NewCaseStudyDetails";
 import caseStudy from "../content/case-study";
