@@ -6,7 +6,6 @@ import SecondaryPageHeader from "../components/SecondaryPageHeader"
 import NewCaseStudyContainer from "../components/NewCaseStudyContainer";
 import NewCaseStudyDetails, {CaseStudyStyle} from "../components/Index/NewCaseStudyDetails";
 import caseStudy from "../content/case-study";
-import '../assets/css/work.css';
 import HowCanWeHelpBanner from "../components/Index/HowCanWeHelpBanner";
 
 const Contact = () => {

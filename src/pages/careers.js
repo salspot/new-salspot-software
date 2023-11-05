@@ -4,6 +4,7 @@ import Navbar from "../components/App/Navbar"
 import Footer from "../components/App/Footer"
 import SecondaryPageHeader from "../components/SecondaryPageHeader"
 import '../assets/css/careers.css';
+import OpenPositions from "../components/open-positions";
 
 const Careers = () => {
 
@@ -21,6 +22,7 @@ const Careers = () => {
         <SecondaryPageHeader smallTitle='Careers' title="We're always looking for outstanding talent"
                              subtext="We create award winning products for the most recognized brands in the world, are you up for the challenge?"
                              backgroundImage={true}/>
+        <OpenPositions/>
         <Footer/>
       </div>
 

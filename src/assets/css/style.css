@@ -67,6 +67,8 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import "work.css";
+@import "careers.css";
 
 body {
     padding: 0;
@@ -74,7 +76,10 @@ body {
     font-size: 17px;
     font-family: "Nunito", sans-serif;
 }
-
+.jobs .accordion-item {
+    border: none;
+    background-color: transparent;
+}
 
 .container {
     max-width: 1230px;
@@ -14001,7 +14006,7 @@ Go Top CSS
     background-color: transparent;
 }
 
-.accordion-flush .accordion-item:last-child {
+.accordion-item:last-child {
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
 }
 

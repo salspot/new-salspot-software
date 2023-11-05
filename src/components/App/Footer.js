@@ -84,20 +84,16 @@ const Footer = () => {
                             <ul className="footer-contact-info">
                                 <li>
                                     <i className='bx bx-map'></i>
-                                    175 5th Ave, New York, NY 10010, <br /> United States
+                                    Cluj-Napoca, Transylvania,, <br /> Romania
                                 </li>
-                                <li>
-                                    <i className='bx bx-phone-call'></i>
-                                    <a href="tel:+44587154756">+1 (123) 456 7890</a>
-                                </li>
-                                <li>
-                                    <i className='bx bx-envelope'></i>
-                                    <a href="mailto:hello@rewy.com">hello@rewy.com</a>
-                                </li>
-                                <li>
-                                    <i className='bx bxs-inbox'></i>
-                                    <a href="tel:+557854578964">+55 785 4578964</a>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <i className='bx bx-phone-call'></i>*/}
+                                {/*    <a href="tel:+40755881771">+40 755 881 771</a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <i className='bx bx-envelope'></i>*/}
+                                {/*    <a href="mailto:hello@rewy.com">contact.salspot@gmail.com</a>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
                     </div>

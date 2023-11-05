@@ -14,7 +14,7 @@ const ContactInfo = () => {
                                 <i className='bx bx-map'></i>
                             </div>
                             <h3>Our Address</h3>
-                            <p>175 5th Ave, New York, NY 10010, United States</p>
+                            <p>Cluj-Napoca</p>
                         </div>
                     </div>
 
