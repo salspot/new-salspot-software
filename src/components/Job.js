@@ -18,7 +18,7 @@ const Job = ({jobDescription, index}) => {
     applicationInfo,
   } = jobDescription;
 
-  const space = <p>&nbsp;</p>;
+  const space = <span>&nbsp;</span>;
 
   return (
     <Accordion>
@@ -37,34 +37,22 @@ const Job = ({jobDescription, index}) => {
         </Accordion.Header>
         <Accordion.Body>
           <div className="panel-body">
-            <p>
-              <p>
-                <strong>About The Role</strong>
-              </p>
-              <p>{aboutRole}</p>
-              {space}
-              <p>
-                <strong>Our ideal candidate has:</strong>
-              </p>
-              <ul>{createList(idealCandidate)}</ul>
-              {space}
-              <p>
-                <strong>Nice to have:</strong>
-              </p>
-              <ul>{createList(niceToHave)}</ul>
-              {space}
-              <p>
-                <strong>In a typical day, you will:</strong>
-              </p>
-              <ul>{createList(typicalDay)}</ul>
-              {space}
-              <p>
-                <strong>Job Perks:</strong>
-              </p>
-              <ul>{createList(jobPerks)}</ul>
-              {space}
-              <p>{applicationInfo}</p>
-            </p>
+            <strong>About The Role</strong>
+            <p>{aboutRole}</p>
+            {space}
+              <strong>Our ideal candidate has:</strong>
+            <ul>{createList(idealCandidate)}</ul>
+            {space}
+              <strong>Nice to have:</strong>
+            <ul>{createList(niceToHave)}</ul>
+            {space}
+              <strong>In a typical day, you will:</strong>
+            <ul>{createList(typicalDay)}</ul>
+            {space}
+              <strong>Job Perks:</strong>
+            <ul>{createList(jobPerks)}</ul>
+            {space}
+            <p>{applicationInfo}</p>
             <div className="button-group"></div>
             <p className=""></p>
           </div>

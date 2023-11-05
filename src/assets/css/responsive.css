@@ -29,10 +29,10 @@
   .pb-70 {
     padding-bottom: 30px;
   }
-  .navbar-area {
-    background-color: #fff;
-    border-bottom: 1px solid #f7f7f7;
-  }
+  /*.navbar-area {*/
+  /*  background-color: #fff;*/
+  /*  border-bottom: 1px solid #f7f7f7;*/
+  /*}*/
   .tarn-nav .container-fluid {
     padding-left: 20px;
     padding-right: 20px;
@@ -3566,9 +3566,19 @@
     margin-top: 35px;
   }
   .navbar-area {
-    background-color: #fff;
-    border-bottom: 1px solid #f7f7f7;
+    background-color: black;
   }
+  .navbar-toggler {
+    background-color: transparent;
+  }
+
+  .navbar-area.is-sticky .navbar-toggler{
+    background: transparent;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
   .tarn-nav .container-fluid {
     padding-left: 20px;
     padding-right: 20px;

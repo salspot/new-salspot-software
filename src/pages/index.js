@@ -20,10 +20,10 @@ const Home = () => {
       {/*<HeroBanner/>*/}
 
       <NewCaseStudyContainer>
-        <NewCaseStudyDetails style={CaseStudyStyle.RIGHT} content={caseStudy.solarBlocks}/>
-        <NewCaseStudyDetails style={CaseStudyStyle.LEFT} content={caseStudy.ehx}/>
-        <NewCaseStudyDetails style={CaseStudyStyle.RIGHT} content={caseStudy.esap}/>
-        <NewCaseStudyDetails style={CaseStudyStyle.LEFT} content={caseStudy.emila}/>
+        <NewCaseStudyDetails style={CaseStudyStyle.RIGHT} content={caseStudy.solarBlocks} elementIndex={1}/>
+        <NewCaseStudyDetails style={CaseStudyStyle.LEFT} content={caseStudy.ehx} elementIndex={2}/>
+        <NewCaseStudyDetails style={CaseStudyStyle.RIGHT} content={caseStudy.esap} elementIndex={3}/>
+        <NewCaseStudyDetails style={CaseStudyStyle.LEFT} content={caseStudy.emila} elementIndex={4}/>
       </NewCaseStudyContainer>
       <InfoBanner/>
       <WhatWeDoModule/>

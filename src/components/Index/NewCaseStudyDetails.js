@@ -1,7 +1,7 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 
-const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content}) => {
+const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content, elementIndex}) => {
   const {title, description, accordionList} = content;
   // styleClasses holds styles for right and left variations. Each list holds a set of classes for different elements in the page.
   const styleClasses = {
@@ -15,7 +15,7 @@ const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content}) => {
 
   const accordionItems = accordionList && accordionList.map((item, index) => {
     return (
-      <Accordion.Item eventKey={index.toString()}>
+      <Accordion.Item key={elementIndex?.toString() + index.toString()} eventKey={elementIndex?.toString() + index.toString()}>
         <Accordion.Header>{item.title}</Accordion.Header>
         <Accordion.Body>
           {item.body}

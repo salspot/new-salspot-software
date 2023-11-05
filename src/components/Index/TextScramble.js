@@ -3,23 +3,39 @@ import React from 'react'
 export class TextScramble extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {text: 'initial'};
+        this.state = {text: 'initial', unmounted: false};
         this.chars= '!<>-_\\/[]{}—=+*^?#________';
         this.counter = 0;
     }
 
     componentDidMount() {
+        console.log('component did mount');
+        this._ismounted = true;
         this.next()
     }
 
+    componentWillUnmount() {
+        this._ismounted = false;
+        console.log('calling component will unmount -----------')
+        console.log('_ismounted value in component will unmount----------', this._ismounted)
+    }
+
     next = () => {
+        console.log('_ismounted value in updateText', this._ismounted)
+        if (!this._ismounted) {
+            return;
+        }
         this.updateText(this.props.phrasesToDecode[this.counter]).then(() => {
-            setTimeout(this.next, 800)
+            setTimeout(this.next, 2500)
         })
         this.counter = (this.counter + 1) === this.props.phrasesToDecode.length ? 0 : (this.counter + 1);
     }
 
     updateText = (newText) => {
+        if (!this._ismounted) {
+            return;
+        }
+
         const oldText = this.state.text;
         const length = Math.max(oldText.length, newText.length);
         const promise = new Promise((resolve) => this.resolve = resolve);

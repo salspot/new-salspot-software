@@ -1999,7 +1999,7 @@ a {
 
 .navbar-toggler {
     border: none;
-    background: #eee !important;
+    background: #eee;
     padding: 10px;
     border-radius: 0;
 }
