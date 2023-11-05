@@ -12729,7 +12729,7 @@ Footer Area CSS
 }
 
 .single-footer-widget .footer-links-list li a {
-    color: #6b6b84;
+    color: white;
     display: inline-block;
 }
 
@@ -12749,14 +12749,14 @@ Footer Area CSS
 
 .single-footer-widget .footer-contact-info li {
     margin-bottom: 13px;
-    color: #6b6b84;
+    color: white;
     position: relative;
     padding-left: 23px;
     font-weight: 600;
 }
 
 .single-footer-widget .footer-contact-info li a {
-    color: #6b6b84;
+    color: white;
     display: inline-block;
 }
 
@@ -12838,11 +12838,16 @@ Footer Area CSS
 
 .footer-bottom-area ul li a {
     display: block;
-    color: #6b6b84;
+    color: white;
 }
 
 .footer-bottom-area ul li a:hover {
     color: #D5333E;
+}
+
+
+.text-strong {
+    color: #D5333E !important;
 }
 
 .footer-map {
@@ -14691,7 +14696,7 @@ a.btn {
 }
 
 body.inverse #gatsby-focus-wrapper {
-    background: radial-gradient(farthest-side at top,#000 0,#161616 100%);
+    background: radial-gradient(farthest-side at top, #000 0, #161616 100%);
     color: #fff;
 }
 
@@ -14699,6 +14704,7 @@ body.inverse #gatsby-focus-wrapper {
 .header .skayline {
     margin: 15px 0 25px;
 }
+
 .skayline {
     height: 3px;
     width: 55px;
@@ -14709,9 +14715,14 @@ body.inverse #gatsby-focus-wrapper {
     top: 0;
     border-width: 0 0 1px;
 }
+
 .navbar-fixed-bottom, .navbar-fixed-top {
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030;
+}
+
+.footer-about-us {
+    padding-right: 50px;
 }

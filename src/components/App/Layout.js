@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
         <RecoilRoot>
             <SEO />
             {children}
-            <GoTop scrollStepInPx="100" delayInMs="10.50" />
         </RecoilRoot>
     )
 }

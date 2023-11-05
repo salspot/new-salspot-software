@@ -8,10 +8,6 @@ const caseStudy = {
         body: ' Solar Blocks offers a peer-to-peer energy trading platform that allows users to buy, sell, or exchange surplus solar energy directly with one another. This system ensures efficient and cost-effective energy transactions while promoting sustainability.'
       },
       {
-        title: 'Transparency and Traceability',
-        body: ' Leveraging blockchain\'s immutable ledger, Solar Blocks provides complete transparency in energy transactions, ensuring traceability and accountability at every step of the process.'
-      },
-      {
         title: 'Incentivizing Green Energy Production',
         body: 'The platform rewards individuals and businesses for producing excess solar energy, encouraging further participation in the renewable energy ecosystem.'
       },
