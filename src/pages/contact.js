@@ -9,12 +9,14 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
 
   useEffect(() => {
-    if(document) {
-
+    if (document) {
+      document.body.classList.add('inverse');
     }
 
     return () => {
-      document.body.classList.remove('inverse');
+      if (document) {
+        document.body.classList.remove('inverse');
+      }
     }
   }, []);
 
