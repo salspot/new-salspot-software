@@ -1125,7 +1125,7 @@ Navbar Area CSS
     z-index: 10;
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
+    width: 100%;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     min-height: 560px;
@@ -1198,32 +1198,6 @@ Navbar Area CSS
     line-height: 1.1;
 }
 
-/*Responsiveness*/
-@media (max-width: 1200px) {
-    .video-wrapper .video-blurb {
-        padding: 0 4em 0 9rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .video-wrapper .video-blurb h1 {
-        margin-bottom: 0;
-        line-height: 1.2;
-        font-size: 55px;
-        max-width: 500px;
-    }
-
-    .video-wrapper .video-blurb {
-        padding: 0 2rem 0 3.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-wrapper .video-blurb {
-        padding: 0 4rem 0 2rem;
-        margin-top: -60px;
-    }
-}
 
 /*Responsiveness*/
 
@@ -13781,18 +13755,7 @@ Go Top CSS
     border-radius: 10px
 }
 
-@media (max-width: 991px) {
-    .services .approach .block-image {
-        height: auto;
-        margin: 0 -15px
-    }
 
-    .services .approach .block-image img {
-        display: block;
-        max-width: 100%;
-        height: auto
-    }
-}
 
 .services .approach .scalapse .panel .panel-heading h4 {
     font-size: 22px
@@ -14731,3 +14694,9 @@ body.inverse #gatsby-focus-wrapper {
 .footer-about-us {
     padding-right: 50px;
 }
+
+.only-mobile {
+    display: none;
+}
+
+

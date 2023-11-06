@@ -96,19 +96,19 @@ const Navbar = ({className, inverse}) => {
                       </Link>
                     </li>
 
-                    {/*<li className="nav-item">*/}
-                    {/*  <Link*/}
-                    {/*      to="/contact"*/}
-                    {/*      activeClassName="active"*/}
-                    {/*      onClick={() => setCollapsed(true)}*/}
-                    {/*      className="nav-link"*/}
-                    {/*  >*/}
-                    {/*    Contact*/}
-                    {/*  </Link>*/}
-                    {/*</li>*/}
+                    <li className="nav-item only-mobile">
+                      <Link
+                          to="/contact"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                      >
+                        Contact
+                      </Link>
+                    </li>
                   </ul>
 
-                  <div className="others-option d-flex align-items-center">
+                  <div className="others-option align-items-center only-desktop">
                     <div className="option-item">
                       <Link
                         to="/contact"
