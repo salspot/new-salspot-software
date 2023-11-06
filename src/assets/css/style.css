@@ -69,6 +69,7 @@ Default CSS
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import "work.css";
 @import "careers.css";
+@import "privacy-policy.css";
 
 body {
     padding: 0;
@@ -14699,4 +14700,21 @@ body.inverse #gatsby-focus-wrapper {
     display: none;
 }
 
+.white-page {
+   background-color: white;
+    color: black;
+}
+.white-page .tarn-nav .navbar .navbar-nav .nav-item a {
+    color:black;
+}
+.white-page .navbar .default-btn {
+    color: black;
+}
+.white-page.navbar-area .logo-black {
+    display: block;
+}
+
+.white-page.navbar-area .logo-white {
+    display: none;
+}
 
