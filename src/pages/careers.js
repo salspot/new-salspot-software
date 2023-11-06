@@ -9,9 +9,13 @@ import OpenPositions from "../components/open-positions";
 const Careers = () => {
 
   useEffect(() => {
-    document.body.classList.add('inverse');
+    if (document) {
+      document.body.classList.add('inverse');
+    }
     return () => {
-      document.body.classList.remove('inverse');
+      if (document) {
+        document.body.classList.remove('inverse');
+      }
     }
   }, []);
 

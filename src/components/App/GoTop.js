@@ -6,15 +6,18 @@ const GoTop = ({scrollStepInPx, delayInMs}) => {
     const timeoutRef = React.useRef(null);
 
     React.useEffect(() => {
-        document.addEventListener("scroll", () => {
-            if (window && window.scrollY > 170) {
-                setThePosition(true)
-            } else {
-                setThePosition(false);
-            }
-        });
+        if (document) {
+            document.addEventListener("scroll", () => {
+                if (window && window.scrollY > 170) {
+                    setThePosition(true)
+                } else {
+                    setThePosition(false);
+                }
+            });
+        }
+
     }, [])
-    
+
     const onScrollStep = () => {
         if (window && window.pageYOffset === 0){
             clearInterval(timeoutRef.current);
@@ -30,10 +33,10 @@ const GoTop = ({scrollStepInPx, delayInMs}) => {
 
     const renderGoTopIcon = () => {
         return (
-            <div 
-                className={`go-top ${thePosition ? 'active' : ''}`} 
-                onClick={scrollToTop} 
-                role="button" 
+            <div
+                className={`go-top ${thePosition ? 'active' : ''}`}
+                onClick={scrollToTop}
+                role="button"
                 tabIndex="0"
                 aria-hidden="true"
             >

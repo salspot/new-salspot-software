@@ -10,12 +10,12 @@ const InfoBanner = () => {
                         <div className="col-lg-6 col-md-6 col-sm-12 left">
                             <div className="title">What we create</div>
                             <h3 className="">A full offering of creative services</h3>
-                            <div className="blurb">Leverage the most contemporary design practices and level-up your
+                            <div className="blurb">Leverage the latest software design practices and level-up your
                                 product. From gamification and UI/UX design to consumer insights and interactive
                                 prototyping, we'll help you de-risk your product decisions and bring home the ROI.
                             </div>
                             <div className="cta-button">
-                                <a className="btn action-btn row" aria-label="Our Open Source" href="/creative">Let's
+                                <a className="btn action-btn row" aria-label="Our Contact Page" href="/contact">Let's
                                     Inspire</a>
                             </div>
                         </div>

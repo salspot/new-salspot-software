@@ -9,8 +9,9 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
 
   useEffect(() => {
+    if(document) {
 
-    document.body.classList.add('inverse');
+    }
 
     return () => {
       document.body.classList.remove('inverse');

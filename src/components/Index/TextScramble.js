@@ -9,19 +9,15 @@ export class TextScramble extends React.Component {
     }
 
     componentDidMount() {
-        console.log('component did mount');
         this._ismounted = true;
         this.next()
     }
 
     componentWillUnmount() {
         this._ismounted = false;
-        console.log('calling component will unmount -----------')
-        console.log('_ismounted value in component will unmount----------', this._ismounted)
     }
 
     next = () => {
-        console.log('_ismounted value in updateText', this._ismounted)
         if (!this._ismounted) {
             return;
         }

@@ -1,7 +1,7 @@
 import React from "react";
-import { useRecoilState } from "recoil";
-import { collapsedState } from "../../utils/recoil-atoms";
-import { Link } from "gatsby";
+import {useRecoilState} from "recoil";
+import {collapsedState} from "../../utils/recoil-atoms";
+import {Link} from "gatsby";
 import logo from "../../assets/images/logo.png";
 
 const NavbarTwo = () => {
@@ -12,15 +12,18 @@ const NavbarTwo = () => {
   };
 
   React.useEffect(() => {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
-      if (window && window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
-      } else {
-        elementId.classList.remove("is-sticky");
-      }
-    });
-    if(window) {
+    if (document) {
+      let elementId = document.getElementById("navbar");
+      document.addEventListener("scroll", () => {
+        if (window && window.scrollY > 170) {
+          elementId.classList.add("is-sticky");
+        } else {
+          elementId.classList.remove("is-sticky");
+        }
+      });
+    }
+
+    if (window) {
       window.scrollTo(0, 0);
     }
   });
@@ -43,7 +46,7 @@ const NavbarTwo = () => {
                 onClick={() => setCollapsed(true)}
                 className="navbar-brand"
               >
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo"/>
               </Link>
 
               <button
