@@ -26,3 +26,6 @@
 .post-body .post ul li {
     list-style: disc;
 }
+.legal.header .headline {
+    margin: 140px 0 0;
+}

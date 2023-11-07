@@ -11,6 +11,7 @@ const caseStudy = {
         title: 'Incentivizing Green Energy Production',
         body: 'The platform rewards individuals and businesses for producing excess solar energy, encouraging further participation in the renewable energy ecosystem.'
       },
+
       {
         title: 'Smart Contracts and Automation',
         body: 'Utilizing smart contracts, Solar Blocks automates energy transactions, making the process secure, reliable, and free from intermediaries.'

@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import logo from "../../assets/images/logo.png"
 import footerMap from "../../assets/images/footer-map.png"
 
 const Footer = () => {
@@ -112,11 +111,7 @@ const Footer = () => {
                                         Privacy Policy
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link to="/terms-of-service">
-                                        Terms & Conditions
-                                    </Link>
-                                </li>
+
                             </ul>
                         </div>
                     </div>

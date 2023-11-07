@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <Navbar className="navbar-fixed-top white-page"/>
-      <header className="header ">
+      <header className="header legal">
         <div className="container">
           <div className="row headline">
             <div className="col-lg-9 col-md-10 col-sm-12 col-centered">
