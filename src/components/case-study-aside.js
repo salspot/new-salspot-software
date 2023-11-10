@@ -3,7 +3,7 @@ import React from 'react';
 const CaseStudyAside = ({objectives, technologies}) => {
 
   return (
-    <div className="col-md-4 stats-block post-body stats-block">
+    <div className="col-lg-4 stats-block post-body stats-block">
 
       <aside>
         <div>

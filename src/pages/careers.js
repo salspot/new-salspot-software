@@ -25,7 +25,7 @@ const Careers = () => {
         <Navbar className="navbar-fixed-top" inverse={true}/>
         <SecondaryPageHeader smallTitle='Careers' title="We're always looking for outstanding talent"
                              subtext="We create award winning products for the most recognized brands in the world, are you up for the challenge?"
-                             backgroundImage={true}/>
+                             backgroundImageFlag={true}/>
         <OpenPositions/>
         <Footer/>
       </div>

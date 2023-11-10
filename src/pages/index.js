@@ -11,7 +11,6 @@ import WhatWeDoModule from "../components/Index/WhatWeDoModule";
 import NewCaseStudyDetails, {CaseStudyStyle} from "../components/Index/NewCaseStudyDetails";
 import caseStudy from "../content/case-study";
 import NewCaseStudyContainer from "../components/NewCaseStudyContainer";
-
 const Home = () => {
   return (
     <Layout>

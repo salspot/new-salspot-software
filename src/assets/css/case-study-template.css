@@ -540,6 +540,9 @@ body:has(.case-studies-template) {
 }
 
 .case-studies-template {
+    padding: 0;
+}
+.case-studies-template {
 
     .post img {
         width: 100%;
@@ -603,6 +606,28 @@ body:has(.case-studies-template) {
 .case-studies-template-header {
     &.header .headline {
         margin: 140px 0 0 60px;
+        margin-left: 16.66666667%;
+        padding: 0 15px;
+    }
+
+    .headline {
+        position: absolute;
+        z-index: 2;
+        text-align: left;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: 0;
+        color: white;
+    }
+
+    .hero-image {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        height: 700px;
+        -o-object-fit: cover;
+        object-fit: cover;
     }
 }
 
