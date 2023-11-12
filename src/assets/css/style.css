@@ -14718,3 +14718,20 @@ body.inverse #gatsby-focus-wrapper {
     display: none;
 }
 
+.case-study-item-cta {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0;
+
+}
+
+.case-study-item-cta .default-btn {
+    font-size: 17px;
+    padding: 5px 15px;
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+}
+
+.inverse .case-study-item-cta .default-btn {
+    color: white;
+}

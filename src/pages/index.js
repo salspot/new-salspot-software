@@ -3,12 +3,10 @@ import Navbar from '../components/App/Navbar'
 import Footer from '../components/App/Footer'
 import Layout from '../components/App/Layout'
 import VideoBanner from '../components/Index/VideoBanner';
-// import NewCaseStudies from '../components/Index/NewCaseStudies';
 import HowCanWeHelpBanner from '../components/Index/HowCanWeHelpBanner';
 import InfoBanner from "../components/Index/InfoBanner";
-import HeroBanner from "../components/Index/HeroBanner";
 import WhatWeDoModule from "../components/Index/WhatWeDoModule";
-import NewCaseStudyDetails, {CaseStudyStyle} from "../components/Index/NewCaseStudyDetails";
+import NewCaseStudyDetails, {CaseStudyStyle} from "../components/NewCaseStudyDetails";
 import caseStudy from "../content/case-study";
 import NewCaseStudyContainer from "../components/NewCaseStudyContainer";
 const Home = () => {

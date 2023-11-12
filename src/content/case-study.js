@@ -2,6 +2,7 @@ const caseStudy = {
   solarBlocks: {
     title: 'Solar Blocks - Blockchain Web3 NFTs',
     description: 'Solar Blocks stands as a cutting-edge startup at the intersection of Blockchain technology and Web3 innovation, focusing on revolutionizing the landscape of solar energy solutions. This forward-thinking company is dedicated to harnessing the power of blockchain and decentralized applications to reshape the way solar energy is generated, utilized, and traded',
+    slug: '/case-studies/solar-blocks',
     accordionList: [
       {
         title: 'Decentralized Solar Energy Trading',
@@ -21,6 +22,7 @@ const caseStudy = {
   ehx: {
     title: 'Redefining Travel Experience Through Innovative Services',
     description: 'This leading travel support service entity offers a wide array of supplementary travel provisions and essential aids designed to enhance the overall travel experience. Its commitment to improving travel and offering seamless services has positioned it as a prominent provider in the industry.',
+    slug: '/case-studies/holidayextras',
     accordionList: [
       {
         title: 'Airport Support Solutions',
@@ -39,6 +41,7 @@ const caseStudy = {
   esap: {
     title: 'Field Service Management Solution',
     description: 'Our software development agency proudly contributed to the creation of an innovative Field Service Management (FSM) solution. This powerful platform revolutionizes service operations, offering comprehensive tools for streamlining and enhancing field services.',
+    slug: '/case-studies/sap-fsm',
     accordionList: [
       {
         title: 'Dynamic Service Delivery',
@@ -57,6 +60,7 @@ const caseStudy = {
   emila: {
     title: 'Innovative Service Platform Transformation',
     description: 'We helped develop an innovative service platform operated by a Swiss startup. This versatile platform revolutionizes the service industry, offering an efficient and accessible solution for connecting individuals seeking services with skilled, local experts.',
+    slug: '/case-studies/mila',
     accordionList: [
       {
         title: 'Dynamic Service Connectivity',

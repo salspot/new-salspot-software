@@ -1,8 +1,9 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import {Link} from "gatsby";
 
 const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content, elementIndex}) => {
-  const {title, description, accordionList} = content;
+  const {title, description, accordionList, slug} = content;
   // styleClasses holds styles for right and left variations. Each list holds a set of classes for different elements in the page.
   const styleClasses = {
     right: ['col-lg-4 order-lg-last top', 'col-lg-8'],
@@ -15,7 +16,8 @@ const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content, elementIndex
 
   const accordionItems = accordionList && accordionList.map((item, index) => {
     return (
-      <Accordion.Item key={elementIndex?.toString() + index.toString()} eventKey={elementIndex?.toString() + index.toString()}>
+      <Accordion.Item key={elementIndex?.toString() + index.toString()}
+                      eventKey={elementIndex?.toString() + index.toString()}>
         <Accordion.Header>{item.title}</Accordion.Header>
         <Accordion.Body>
           {item.body}
@@ -34,7 +36,13 @@ const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content, elementIndex
           <Accordion flush alwaysOpen>
             {accordionItems}
           </Accordion>
-
+          <div className="case-study-item-cta">
+            <Link
+              to={slug}
+              activeClassName="active"
+              className="default-btn"
+            >Find out more</Link>
+          </div>
         </div>
       </div>
       <div className={styleClasses[style][1]}>

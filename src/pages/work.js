@@ -4,7 +4,7 @@ import Navbar from "../components/App/Navbar"
 import Footer from "../components/App/Footer"
 import SecondaryPageHeader from "../components/SecondaryPageHeader"
 import NewCaseStudyContainer from "../components/NewCaseStudyContainer";
-import NewCaseStudyDetails, {CaseStudyStyle} from "../components/Index/NewCaseStudyDetails";
+import NewCaseStudyDetails, {CaseStudyStyle} from "../components/NewCaseStudyDetails";
 import caseStudy from "../content/case-study";
 import HowCanWeHelpBanner from "../components/Index/HowCanWeHelpBanner";
 
