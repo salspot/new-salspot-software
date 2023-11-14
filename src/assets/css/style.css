@@ -14730,8 +14730,10 @@ body.inverse #gatsby-focus-wrapper {
     padding: 5px 15px;
     font-family: Nunito, sans-serif;
     font-weight: 500;
+    border: 3px solid #D5333E;
 }
 
 .inverse .case-study-item-cta .default-btn {
     color: white;
 }
+

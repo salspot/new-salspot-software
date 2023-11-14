@@ -96,7 +96,7 @@ ol, ul {
 }
 
 .jobs .scalapse .panel:has(.accordion-button:not(.collapsed)) {
-    background: linear-gradient(120deg,#000 8%,#181818 49%,#000 74%);
+    background: linear-gradient(120deg, #000 8%, #181818 49%, #000 74%);
 }
 
 .panel-default > .panel-heading {
@@ -163,4 +163,35 @@ ol, ul {
 
 .jobs .scalapse .accordion-collapse.show, .inverse .jobs .accordion-body {
     background: transparent;
+    text-align: left;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    padding: 20px 40px;
+}
+
+.jobs .scalapse .panel .panel-body {
+    padding: 0 20px 20px;
+    border: 0 !important;
+}
+
+.jobs {
+    & p {
+        line-height: 1.8;
+        padding: 4px 0;
+        margin: 0 0 12px;
+    }
+}
+
+.jobs .scalapse .panel:hover a {
+    color: #de5d66;
+}
+
+.jobs .scalapse .panel a {
+    color: #D5333E;
+}
+
+.jobs .scalapse .panel ul li {
+    list-style-type: disc;
+    margin-left: 20px;
 }

@@ -40,8 +40,7 @@ const NewCaseStudyDetails = ({style = CaseStudyStyle.LEFT, content, elementIndex
             <Link
               to={slug}
               activeClassName="active"
-              className="default-btn"
-            >Find out more</Link>
+              className="default-btn">See more</Link>
           </div>
         </div>
       </div>

@@ -11,26 +11,33 @@ export default function OpenPositions() {
           <h5>CAREERS AT SALSPOT</h5>
 
           <article>
-            <div className="role-group row col-md-12">
-              <div className="col-lg-3 category">
-                <h5 className="dept">Creative</h5>
-              </div>
+            {Object.keys(careers).map(categoryName => (
+              <div className="role-group row col-md-12">
+                <div className="col-lg-3 category">
+                  <h5 className="dept">{categoryName}</h5>
+                </div>
 
-              <div className="col-lg-9 role">
-                {/*// maybe accordion starts here*/}
-                <div role="tablist" className="panel-group">
-                  <ul className="">
-                    {/*// loop here*/}
+                <div className="col-lg-9 role">
+                  {/*// maybe accordion starts here*/}
+                  <div role="tablist" className="panel-group">
+                    <ul className="">
+                      {/*// loop here*/}
 
-                    <li id="product-designer-fintech" className="panel-default panel">
-                      {/*<JobTitle jobTitleProps={careers.CREATIVE.webDesignerProps}/>*/}
-                      <Job jobDescription={careers.CREATIVE.webDesignerProps} index={1}/>
-                    </li>
-
-                  </ul>
+                      {Object.keys(careers[categoryName]).map((careerName, index) => {
+                        console.log('careerDetails', careerName)
+                        const category = careers[categoryName];
+                        const careerDetails = category[careerName]
+                        return (
+                          <li id="product-designer-fintech" className="panel-default panel">
+                            <Job jobDescription={careerDetails} index={index}/>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </article>
 
         </div>

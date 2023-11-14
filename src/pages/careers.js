@@ -29,7 +29,6 @@ const Careers = () => {
         <OpenPositions/>
         <Footer/>
       </div>
-
     </Layout>
   );
 }

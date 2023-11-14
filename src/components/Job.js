@@ -1,10 +1,9 @@
 import React from 'react';
-import careers from "../pages/careers";
 import Accordion from "react-bootstrap/Accordion";
 
 const Job = ({jobDescription, index}) => {
   const createList = (items) => {
-    return items.map((item, index) => <li key={index}>{item}</li>);
+    return items && items.map((item, index) => <li key={index}>{item}</li>);
   };
 
   const {
@@ -37,24 +36,26 @@ const Job = ({jobDescription, index}) => {
         </Accordion.Header>
         <Accordion.Body>
           <div className="panel-body">
-            <strong>About The Role</strong>
+            <p><strong>About The Role</strong></p>
             <p>{aboutRole}</p>
             {space}
-              <strong>Our ideal candidate has:</strong>
+            <p><strong>Our ideal candidate has:</strong></p>
             <ul>{createList(idealCandidate)}</ul>
             {space}
-              <strong>Nice to have:</strong>
+            <p><strong>Nice to have:</strong></p>
             <ul>{createList(niceToHave)}</ul>
             {space}
-              <strong>In a typical day, you will:</strong>
-            <ul>{createList(typicalDay)}</ul>
-            {space}
-              <strong>Job Perks:</strong>
+            {typicalDay && <>
+              <p><strong>In a typical day, you will:</strong></p>
+              <ul>{createList(typicalDay)}</ul>
+              {space}
+            </>}
+            <p><strong>Job Perks:</strong></p>
             <ul>{createList(jobPerks)}</ul>
             {space}
             <p>{applicationInfo}</p>
-            <div className="button-group"></div>
-            <p className=""></p>
+            <p>Apply at <a
+              href={`mailto:jobs@salspotsoftware.com?subject=${role + ' Application'}`}>jobs@salspotsoftware.com</a></p>
           </div>
         </Accordion.Body>
       </Accordion.Item>
