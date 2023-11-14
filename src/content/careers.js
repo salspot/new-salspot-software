@@ -24,10 +24,10 @@ const careers = {
         'Continuous Integration experience with CircleCI or similar',
       ],
       typicalDay: [
-        'Work with our design and development teams to implement code',
+        'Work with our design and development teams to implement features',
         'Be responsible for overall backend/api and frontend code quality',
         'Uphold our high engineering standards and bring consistency to our product development',
-        'Make sure we’re meeting our product roadmap',
+
         'Work with our team to create both technically viable and beautiful user experiences',
       ],
       jobPerks: [
@@ -64,10 +64,8 @@ const careers = {
         'Bachelor’s Degree in Computer Science, Applied Mathematics, Electrical Engineering, etc or equivalent experience',
       ],
       typicalDay: [
-        'Work with our design and development teams to implement code',
-        'Be responsible for overall backend/api and frontend code quality',
+        'Work with our design and development teams to implement features',
         'Uphold our high engineering standards and bring consistency to our product development',
-        'Make sure we’re meeting our product roadmap',
         'Work with our team to create both technically viable and beautiful user experiences',
       ],
       jobPerks: [
@@ -101,7 +99,6 @@ const careers = {
       typicalDay: [
         'Work with our design and development teams to implement frontend code',
         'Be responsible for overall code quality',
-        'Make sure we’re meeting our product roadmap',
         'Work with our team to create both technically viable and beautiful user experiences',
       ],
       jobPerks: [
@@ -112,41 +109,6 @@ const careers = {
         'Flexible working hours',
       ],
       applicationInfo: `Along with your CV, please include links to relevant code samples (Typescript, HTML, CSS, etc) and/or links to recent projects. We kindly ask agencies to not bother applying.`,
-    },
-    fullStackEngineerDotNet: {
-      role: 'Full Stack Engineer - .Net',
-      location: 'Remote',
-      aboutRole: `We are currently seeking a talented Mid or Senior Full-Stack Engineer to join our engineering team. This is a remote full-time contract position.`,
-      idealCandidate: [
-        '3+ years of experience working with .Net on a production product',
-        '3+ years experience with Relational Databases',
-        '2+ years of experience with React/Angular',
-        'Clean Code, SOLID principles and design patterns knowledge',
-        'Strong knowledge of .NET/Microsoft technologies (Asp.Net MVC/WebApi and/or WPF/UWP, Entity Framework, Windows Services etc.)',
-        'Knowledge of event sourcing, message queues and caches',
-        'Strong knowledge of basic software engineering concepts (data structures, algorithms, OOP)',
-        'Experience writing Unit tests',
-        'Strong working knowledge of Git',
-        'Ability to read and understand English software requirements, strong written English, ability to conduct interviews in English',
-      ],
-      niceToHave: [
-        'Microservice expertise',
-        'Azure/AWS/Google Cloud or any equivalent cloud experience',
-      ],
-      typicalDay: [
-        'Work with our design and development teams to implement code',
-        'Be responsible for overall backend/api and frontend code quality',
-        'Uphold our high engineering standards and bring consistency to our product development',
-        'Make sure we’re meeting our product roadmap',
-        'Work with our team to create both technically viable and beautiful user experiences',
-      ],
-      jobPerks: [
-        'Work with a variety of clients including Fortune 500 companies',
-        'Contract position',
-        'Full-time remote position',
-        'Flexible working hours',
-      ],
-      applicationInfo: `We encourage you to apply even if you don't have experience in all the above. Send us your CV and LinkedIn profile so our HRs can connect with you. We kindly ask agencies to not applying.`
     },
     qaEngineerJava: {
       role: 'QA Automation - Java',
@@ -244,7 +206,74 @@ const careers = {
         'Flexible working hours',
       ],
       applicationInfo: `We encourage you to apply even if you don't have experience in all the above. Send us your CV and LinkedIn profile so our HRs can connect with you. We kindly ask agencies to not applying.`
-    }
+    },
+    dotNetEngineer: {
+      role: '.Net Engineer',
+      location: 'Remote',
+      aboutRole: `We are currently seeking a talented Mid or Senior .Net Engineer to join our engineering team. This is a remote full-time contract position.`,
+      idealCandidate: [
+        '3+ years of experience working with .Net on a production product',
+        '3+ years experience with Relational Databases',
+        'Clean Code, SOLID principles and design patterns knowledge',
+        'Strong knowledge of .NET/Microsoft technologies (Asp.Net MVC/WebApi and/or WPF/UWP, Entity Framework, Windows Services etc.)',
+        'Strong knowledge of basic software engineering concepts (data structures, algorithms, OOP)',
+        'Experience writing Unit tests',
+        'Strong working knowledge of Git',
+        'Ability to read and understand English software requirements, strong written English, ability to conduct interviews in English',
+      ],
+      niceToHave: [
+        'Microservice expertise',
+        'Azure/AWS/Google Cloud or any equivalent cloud experience',
+      ],
+      typicalDay: [
+        'Work with our development teams to implement features',
+        'Be responsible for overall backend/api and frontend code quality',
+        'Uphold our high engineering standards and bring consistency to our product development',
+
+        'Work with our team to create both technically viable and beautiful user experiences',
+      ],
+      jobPerks: [
+        'Work with a variety of clients including Fortune 500 companies',
+        'Contract position',
+        'Full-time remote position',
+        'Flexible working hours',
+      ],
+      applicationInfo: `We encourage you to apply even if you don't have experience in all the above. Send us your CV and LinkedIn profile so our HRs can connect with you. We kindly ask agencies to not applying.`
+    },
+    fullStackEngineerDotNet: {
+      role: 'Full Stack Engineer - .Net',
+      location: 'Remote',
+      aboutRole: `We are currently seeking a talented Mid or Senior Full-Stack Engineer to join our engineering team. This is a remote full-time contract position.`,
+      idealCandidate: [
+        '3+ years of experience working with .Net on a production product',
+        '3+ years experience with Relational Databases',
+        '2+ years of experience with React/Angular',
+        'Clean Code, SOLID principles and design patterns knowledge',
+        'Strong knowledge of .NET/Microsoft technologies (Asp.Net MVC/WebApi and/or WPF/UWP, Entity Framework, Windows Services etc.)',
+        'Knowledge of event sourcing, message queues and caches',
+        'Strong knowledge of basic software engineering concepts (data structures, algorithms, OOP)',
+        'Experience writing Unit tests',
+        'Strong working knowledge of Git',
+        'Ability to read and understand English software requirements, strong written English, ability to conduct interviews in English',
+      ],
+      niceToHave: [
+        'Microservice expertise',
+        'Azure/AWS/Google Cloud or any equivalent cloud experience',
+      ],
+      typicalDay: [
+        'Work with our design and development teams to implement features',
+        'Be responsible for overall backend/api and frontend code quality',
+        'Uphold our high engineering standards and bring consistency to our product development',
+        'Work with our team to create both technically viable and beautiful user experiences',
+      ],
+      jobPerks: [
+        'Work with a variety of clients including Fortune 500 companies',
+        'Contract position',
+        'Full-time remote position',
+        'Flexible working hours',
+      ],
+      applicationInfo: `We encourage you to apply even if you don't have experience in all the above. Send us your CV and LinkedIn profile so our HRs can connect with you. We kindly ask agencies to not applying.`
+    },
   },
   PRODUCT: {
     productManager: {
@@ -287,8 +316,46 @@ const careers = {
       applicationInfo: `Along with your CV, include links or mentions to the relevant products you’ve lead or launched. We kindly ask agencies to not apply.`,
     }
   },
-  HR: {}
-
+  HR: {
+    hrRecruiter: {
+      role: 'HR Recruiter',
+      location: 'Remote',
+      aboutRole: `We are currently seeking a talented HR Recruiter to join our engineering and product team. This is a remote full-time position with possibility of contract.`,
+      responsibilities: [
+        'Source, evaluate, interview, and hire talented team members',
+        'Interact with potential candidates on professional networks (e.g. Github, Behance, etc.) and social media (e.g. LinkedIn, Facebook, Twitter, etc.)',
+        'Coordinate with Hiring Managers/ HR department to determine position requirements',
+        'Craft and send recruitment emails/requests',
+        'Review online portfolios and resumes to pre-screen candidates',
+        'Asking for referrals from external networks for hard-to-fill roles',
+        'Contact past applicants for new job opportunities',
+        'Organize online interviews for HR Team using all possible resources',
+        'Add to talent pool for cold and hot positions and keep in touch with best TP candidates regularly',
+        'Set up candidate interviews with Hiring Managers and send code challenges',
+        'Measure and record conversion rates',
+        'Search and find the best Middle - Senior level specialists for various IT positions',
+      ],
+      idealCandidate: [
+        '2+ years experience in IT Recruiting with a specific focus on Software Engineering',
+        'Comfortable using recruiting systems and collaboration tools (e.g. FreshTeam, Slack, etc.) to work seamlessly within a high performing HR team',
+        'Have a basic understanding of modern software development tools (e.g. Github, etc.)',
+        'Have established recruiting networks and understand recruiting best practices',
+        'Familiar with social media marketing and digital networking',
+        'Proficient in relevant office software and database systems',
+        'Understands target groups and chats in instant messengers and knows how to use them in sourcing',
+        'Can find and attract candidates with Boolean search, LinkedIn, and other alternative search methods',
+        'Excellent communication and time management skills',
+        'Good negotiation skills',
+      ],
+      jobPerks: [
+        'Competitive salary',
+        'Full-time remote position',
+        '23 days of holiday',
+        'Flexible working hours',
+      ],
+      applicationInfo: `We kindly ask agencies to not apply.`,
+    }
+  }
 }
 
 export default careers;
