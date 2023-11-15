@@ -10,11 +10,11 @@ const BlogDetails = () => {
         <Layout>
             <Navbar />
             <PageBanner
-                pageTitle="Blog Details" 
-                homePageText="Home" 
-                homePageUrl="/" 
-                activePageText="Blog Details" 
-            /> 
+                pageTitle="BlogHomepage Details"
+                homePageText="Home"
+                homePageUrl="/"
+                activePageText="BlogHomepage Details"
+            />
             <BlogDetailsContent />
             <Footer />
         </Layout>

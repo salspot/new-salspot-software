@@ -1,0 +1,41 @@
+.blog {
+
+
+    &.header .page-type {
+        font-size: 70px;
+        max-width: 700px;
+    }
+
+
+    @media (max-width: 768px) {
+        &.header .page-type {
+            font-size: 40px;
+        }
+
+        &.header .headline {
+            margin: 140px 0 60px 5px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        &.header .page-type {
+            font-size: 50px;
+        }
+
+        &.header .headline {
+            margin: 180px 0 70px 30px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &.header .headline {
+            margin: 180px 0 70px 40px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .page-blurb {
+            width: 58.33333333%;
+        }
+    }
+}

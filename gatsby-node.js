@@ -1,6 +1,18 @@
 const path = require("path")
-const postTemplate = path.resolve(`./src/templates/case-study-template.js`)
+const caseStudyTemplate = path.resolve(`./src/templates/case-study-template.js`)
+const blogHomepageTemplate = path.resolve(`./src/templates/blog-homepage.js`)
 
+const ContentTypes = {
+    BLOG_HOMEPAGE: 'blog-homepage',
+    BLOG_POST: 'blog-post',
+    CASE_STUDY: 'case-study',
+}
+
+const contentTemplateMap = {
+    [ContentTypes.BLOG_HOMEPAGE]: blogHomepageTemplate,
+    [ContentTypes.BLOG_POST]: blogHomepageTemplate,
+    [ContentTypes.CASE_STUDY]: caseStudyTemplate,
+}
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     if (stage === "build-html" || stage === "develop-html") {
@@ -28,6 +40,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     id
                     frontmatter {
                         slug
+                        key
                     }
                 }
             }
@@ -43,7 +56,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts.forEach(node => {
         createPage({
             path: node.frontmatter.slug,
-            component: postTemplate,
+            component: contentTemplateMap[node.frontmatter.key],
             context: { id: node.id },
         })
     })

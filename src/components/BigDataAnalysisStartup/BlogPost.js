@@ -24,7 +24,7 @@ const BlogPost = () => {
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
                                 <Link to="/blog-details">
-                                    <img src={BlogImg4} alt="Blog" />
+                                    <img src={BlogImg4} alt="BlogHomepage" />
                                 </Link>
                             </div>
 
@@ -53,7 +53,7 @@ const BlogPost = () => {
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
                                 <Link to="/blog-details">
-                                    <img src={BlogImg5} alt="Blog" />
+                                    <img src={BlogImg5} alt="BlogHomepage" />
                                 </Link>
                             </div>
 
@@ -82,7 +82,7 @@ const BlogPost = () => {
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
                                 <Link to="/blog-details">
-                                    <img src={BlogImg6} alt="Blog" />
+                                    <img src={BlogImg6} alt="BlogHomepage" />
                                 </Link>
                             </div>
 
