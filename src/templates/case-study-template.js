@@ -56,8 +56,8 @@ export default function PageTemplate({data, children}) {
 }
 
 export const query = graphql`
-    query($id: String!) {
-        mdx(id: { eq: $id }) {
+    query($id: String!){
+        mdx(id: { eq: $id } frontmatter: { key: { eq: "case-study" } } ) {
             id
             body
             frontmatter {

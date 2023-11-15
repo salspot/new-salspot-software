@@ -166,7 +166,7 @@ ol, ul {
     text-align: left;
 }
 
-.accordion-item:first-of-type .accordion-button {
+.jobs .accordion-item:first-of-type .accordion-button {
     padding: 20px 40px;
 }
 

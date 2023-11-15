@@ -10,6 +10,7 @@ import Footer from '../components/App/Footer'
 import SecondaryPageHeader from "../components/SecondaryPageHeader";
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import '../assets/css/blog-homepage.css';
+import BlogPostCard from "../components/BlogPostCard";
 
 const shortcodes = {Link} // Provide common components that will be available in the MDX files
 
@@ -30,14 +31,7 @@ export default function BlogHomepage({data, children}) {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12 post-block">
-                <article className="post">
-                  <MDXProvider components={shortcodes}>
-                    <MDXRenderer
-                      frontmatter={data.mdx.frontmatter}>
-                      {data.mdx.body}
-                    </MDXRenderer>
-                  </MDXProvider>
-                </article>
+                <BlogPostCard/>
               </div>
             </div>
           </div>
@@ -51,8 +45,7 @@ export default function BlogHomepage({data, children}) {
 export const query = graphql`
     query BlogHomeQuery($id: String!) {
         allMdx(
-            filter: { frontmatter: { key: { eq: "blog-post" } } }
-        ) {
+            filter: { frontmatter: { key: { eq: "blog-post" } } }) {
             edges {
                 node {
                     id
