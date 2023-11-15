@@ -15,7 +15,6 @@ import BlogPostCard from "../components/BlogPostCard";
 const shortcodes = {Link} // Provide common components that will be available in the MDX files
 
 export default function BlogHomepage({data, children}) {
-  // const headerImage = getImage(data.mdx.frontmatter.headerImage?.childImageSharp?.gatsbyImageData)
 
   console.log('data', data);
   console.log('children', children);
@@ -27,12 +26,10 @@ export default function BlogHomepage({data, children}) {
         <SecondaryPageHeader smallTitle='Blog' title='Ideas are great. Results are better.' classNames='blog'
                              headlineClassNames='col-xl-8 col-md-8 col-sm-8 col-xs-12 row flex-column'
                              subtext="We're turning our experience into actionable insights on engineering, design, process and strategy."/>
-        <section className="post-body">
+        <section className="post-body blog">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-12 post-block">
-                <BlogPostCard/>
-              </div>
+              <BlogPostCard postDetails={data.allMdx.edges[0].node.frontmatter}/>
             </div>
           </div>
         </section>
@@ -50,9 +47,17 @@ export const query = graphql`
                 node {
                     id
                     frontmatter {
+                        key
                         slug
                         title
-                        key
+                        category
+                        headerImage {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
+                        author
+                        shortDescription
                     }
                 }
             }
