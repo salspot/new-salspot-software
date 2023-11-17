@@ -1,24 +1,17 @@
 import React from 'react'
 import {graphql} from "gatsby"
-import {MDXProvider} from "@mdx-js/react"
 import {Link} from "gatsby"
 import Navbar from "../components/App/Navbar";
 import Layout from "../components/App/Layout";
-import {MDXRenderer} from "gatsby-plugin-mdx";
 import HowCanWeHelpBanner from "../components/Index/HowCanWeHelpBanner";
 import Footer from '../components/App/Footer'
 import SecondaryPageHeader from "../components/SecondaryPageHeader";
-import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import '../assets/css/blog-homepage.css';
 import BlogPostCard from "../components/BlogPostCard";
 
 const shortcodes = {Link} // Provide common components that will be available in the MDX files
 
 export default function BlogHomepage({data, children}) {
-
-  console.log('data', data);
-  console.log('children', children);
-
   return (
     <>
       <Layout>
