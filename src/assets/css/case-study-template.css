@@ -5,8 +5,8 @@ body:has(.case-studies-template) {
 .case-studies-template {
     padding: 0;
 }
-.case-studies-template {
 
+.case-studies-template {
     .post img {
         width: 100%;
         height: auto;
@@ -24,7 +24,7 @@ body:has(.case-studies-template) {
         padding: 60px 60px 0;
     }
 
-    .stats-block .stats-section {
+    & .stats-block .stats-section {
         padding: 15px 0;
         text-align: left;
         font-size: 16px;
@@ -33,22 +33,22 @@ body:has(.case-studies-template) {
         vertical-align: top;
     }
 
-    .stats-block .stats-section i {
+    & .stats-block .stats-section i {
         font-size: 30px;
     }
 
-    .stats-block .stats-section h4 {
+    & .stats-block .stats-section h4 {
         font-weight: 600;
         margin: 2px 0 8px;
         font-size: 18px;
     }
 
-    .stats-block .stats-section ul {
+    & .stats-block .stats-section ul {
         padding: 0;
         margin: 0;
     }
 
-    .stats-block .stats-section ul li {
+    & .stats-block .stats-section ul li {
         margin: 3px 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -56,7 +56,7 @@ body:has(.case-studies-template) {
         color: #D5333E;
     }
 
-    .work-detail .post-body {
+    & .work-detail .post-body {
         padding: 0 0 30px;
     }
 

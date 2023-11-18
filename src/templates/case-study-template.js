@@ -4,13 +4,13 @@ import {MDXProvider} from "@mdx-js/react"
 import {Link} from "gatsby"
 import Navbar from "../components/App/Navbar";
 import Layout from "../components/App/Layout";
-import '../assets/css/case-study-template.css';
 import {MDXRenderer} from "gatsby-plugin-mdx";
 import CaseStudyAside from "../components/case-study-aside";
 import HowCanWeHelpBanner from "../components/Index/HowCanWeHelpBanner";
 import Footer from '../components/App/Footer'
 import SecondaryPageHeader from "../components/SecondaryPageHeader";
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
+import '../assets/css/case-study-template.css';
 
 const shortcodes = {Link} // Provide common components that will be available in the MDX files
 
