@@ -1,6 +1,3 @@
-.case-studies-template {
-}
-
 body:has(.case-studies-template) {
     background: radial-gradient(farthest-side at top, #fff 0, #f8f8f8 100%);
 }
@@ -16,11 +13,15 @@ body:has(.case-studies-template) {
     }
 
     &.post-body .stats-block {
-        /*background: linear-gradient(110deg, #f6f6f6 0, #fff 100%);*/
         background: radial-gradient(farthest-side at top, #fff 0, #f8f8f8 100%);
-
         padding: 70px 20px;
         margin: 0 -1px;
+    }
+
+    &.post-body .post-block {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 60px 0;
     }
 
     .stats-block .stats-section {
@@ -57,14 +58,6 @@ body:has(.case-studies-template) {
 
     .work-detail .post-body {
         padding: 0 0 30px;
-    }
-
-    &.post-body .post-block {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding: 60px 60px 0;
     }
 
 }
